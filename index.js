@@ -901,4 +901,30 @@
       if (section) observer.observe(section);
     });
   }
+
+  // Lógica del logo de la moneda flotante según el mes
+  const coinImg = document.querySelector('.coin-back img');
+  const coinPicture = document.querySelector('.coin-back picture');
+  if (coinImg && coinPicture) {
+    const month = new Date().getMonth(); // 0 = Enero, 6 = Julio, 11 = Diciembre
+    let newSrc = '';
+    
+    if (month === 0) {
+      newSrc = 'imagenes/logo_gafas.png';
+    } else if (month === 6) {
+      newSrc = 'imagenes/logo_colombiano.png';
+    } else if (month === 8) { // Septiembre
+      newSrc = 'imagenes/logo_amoryamistad.jpg';
+    } else if (month === 11) {
+      newSrc = 'imagenes/logo_navideño.png';
+    }
+    
+    if (newSrc) {
+      coinPicture.querySelectorAll('source').forEach(s => s.remove());
+      coinImg.src = newSrc;
+      coinImg.style.backgroundColor = '#005bb5'; // Azul de fondo
+      coinImg.style.borderRadius = '50%'; // Fondo redondeado
+      coinImg.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.3)'; // Sombra bonita
+    }
+  }
 })();
