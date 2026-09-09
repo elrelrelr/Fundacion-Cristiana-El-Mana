@@ -1,0 +1,24 @@
+{
+  "name": "unimana-web",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Sitio estático de Fundación Cristiana El Maná · UNIMANÁ. HTML, CSS y JavaScript.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/fonts.mjs && node scripts/build.mjs && node scripts/minify.mjs",
+    "images": "node scripts/images.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/test.mjs",
+    "format": "prettier --write index.js style.css scripts/*.mjs data/*.mjs assets/js/theme.js vistas/funciones.js vistas/styles.css",
+    "format:check": "prettier --check index.js style.css scripts/*.mjs data/*.mjs assets/js/theme.js vistas/funciones.js vistas/styles.css"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "clean-css": "^5.3.3",
+    "playwright": "^1.58.0",
+    "prettier": "3.6.2",
+    "sharp": "^0.34.5",
+    "terser": "^5.46.0"
+  }
+}

@@ -1,0 +1,24 @@
+# Fragmento opcional para un server {} de Nginx que ya tenga root y TLS configurados.
+# No pegar otro server {} sobre un sitio existente. Revisar con nginx -t.
+# GitHub Pages no usa este archivo. No se configura PHP.
+index index.html;
+error_page 404 /404.html;
+
+# Protecciones del navegador; data: permite las fuentes integradas en CSS.
+add_header X-Content-Type-Options "nosniff" always;
+add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+add_header X-Frame-Options "SAMEORIGIN" always;
+add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()" always;
+add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self'" always;
+
+# Activar solo después de comprobar HTTPS de forma permanente:
+# add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+# Sirve archivos reales; restringe las carpetas de mantenimiento y los archivos ocultos.
+location / { try_files $uri $uri/ =404; }
+location ~ ^/(scripts|data|docs)/ { deny all; }
+location ~ /\. { deny all; }
+
+# Reduce el peso transferido de los archivos de texto.
+gzip on;
+gzip_types text/plain text/css application/javascript text/javascript application/json application/xml image/svg+xml;

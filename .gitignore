@@ -1,0 +1,15 @@
+# Dependencias, cachés y resultados temporales: no se incluyen en el historial ni en el ZIP.
+node_modules/
+.cache/
+.DS_Store
+test-results/
+playwright-report/
+*.log
+
+# Nunca versionar secretos de un futuro backend
+.env
+.env.*
+!.env.example
+
+# Capturas y herramientas temporales de revisión
+.arena/

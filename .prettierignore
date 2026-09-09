@@ -1,0 +1,12 @@
+# Archivos compactos, fuentes y recursos originales: no se formatean a mano.
+style.min.css
+index.min.js
+assets/fonts/
+assets/icons/
+assets/optimized/
+imagenes/
+documentos/
+node_modules/
+.arena/
+# Los informes conservan el formato que escribe cada comprobación.
+docs/*.json

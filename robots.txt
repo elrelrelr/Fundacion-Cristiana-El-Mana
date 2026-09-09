@@ -1,0 +1,9 @@
+# Generado por scripts/build.mjs. Instrucciones para los buscadores.
+# Las carpetas de mantenimiento no forman parte del contenido a indexar.
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /scripts/
+Disallow: /data/
+
+Sitemap: https://fundacionunimana.com/sitemap.xml

@@ -1,0 +1,15 @@
+# Opcional, solo para alojamientos que interpreten _headers. No se aplica en GitHub Pages.
+# Las siguientes cabeceras se aplican a las rutas públicas del sitio.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self'
+
+# Las páginas HTML se comprueban de nuevo para no mostrar contenido antiguo.
+/*.html
+  Cache-Control: no-cache
+
+/vistas/*.html
+  Cache-Control: no-cache

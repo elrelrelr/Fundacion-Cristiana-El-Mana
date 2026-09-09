@@ -1,0 +1,812 @@
+{
+  "carousel/2016.jpg": {
+    "width": 551,
+    "height": 390,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-2016-400.webp"
+      },
+      {
+        "width": 551,
+        "src": "assets/optimized/carousel-2016-551.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-2016-551.webp",
+    "thumb": "assets/optimized/carousel-2016-thumb.webp"
+  },
+  "carousel/2018.jpg": {
+    "width": 733,
+    "height": 449,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-2018-400.webp"
+      },
+      {
+        "width": 733,
+        "src": "assets/optimized/carousel-2018-733.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-2018-733.webp",
+    "thumb": "assets/optimized/carousel-2018-thumb.webp"
+  },
+  "carousel/2021.jpg": {
+    "width": 1280,
+    "height": 847,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-2021-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-2021-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-2021-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-2021-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-2021-1280.webp",
+    "thumb": "assets/optimized/carousel-2021-thumb.webp"
+  },
+  "carousel/202101.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202101-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202101-800.webp"
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/carousel-202101-960.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202101-960.webp",
+    "thumb": "assets/optimized/carousel-202101-thumb.webp"
+  },
+  "carousel/202102.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202102-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202102-800.webp"
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/carousel-202102-960.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202102-960.webp",
+    "thumb": "assets/optimized/carousel-202102-thumb.webp"
+  },
+  "carousel/202103.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202103-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202103-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202103-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202103-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202103-1280.webp",
+    "thumb": "assets/optimized/carousel-202103-thumb.webp"
+  },
+  "carousel/202201.jpg": {
+    "width": 1600,
+    "height": 900,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202201-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202201-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202201-1200.webp"
+      },
+      {
+        "width": 1600,
+        "src": "assets/optimized/carousel-202201-1600.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202201-1600.webp",
+    "thumb": "assets/optimized/carousel-202201-thumb.webp"
+  },
+  "carousel/202202.jpg": {
+    "width": 1280,
+    "height": 958,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202202-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202202-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202202-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202202-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202202-1280.webp",
+    "thumb": "assets/optimized/carousel-202202-thumb.webp"
+  },
+  "carousel/202301.jpg": {
+    "width": 1080,
+    "height": 763,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202301-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202301-800.webp"
+      },
+      {
+        "width": 1080,
+        "src": "assets/optimized/carousel-202301-1080.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202301-1080.webp",
+    "thumb": "assets/optimized/carousel-202301-thumb.webp"
+  },
+  "carousel/202302.jpg": {
+    "width": 1080,
+    "height": 583,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202302-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202302-800.webp"
+      },
+      {
+        "width": 1080,
+        "src": "assets/optimized/carousel-202302-1080.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202302-1080.webp",
+    "thumb": "assets/optimized/carousel-202302-thumb.webp"
+  },
+  "carousel/202303.jpg": {
+    "width": 1280,
+    "height": 961,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202303-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202303-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202303-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202303-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202303-1280.webp",
+    "thumb": "assets/optimized/carousel-202303-thumb.webp"
+  },
+  "carousel/202304.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202304-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202304-800.webp"
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/carousel-202304-960.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202304-960.webp",
+    "thumb": "assets/optimized/carousel-202304-thumb.webp"
+  },
+  "carousel/202305.jpg": {
+    "width": 1080,
+    "height": 1008,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202305-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202305-800.webp"
+      },
+      {
+        "width": 1080,
+        "src": "assets/optimized/carousel-202305-1080.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202305-1080.webp",
+    "thumb": "assets/optimized/carousel-202305-thumb.webp"
+  },
+  "carousel/202402.jpg": {
+    "width": 4080,
+    "height": 2296,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202402-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202402-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202402-1200.webp"
+      },
+      {
+        "width": 1600,
+        "src": "assets/optimized/carousel-202402-1600.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202402-1600.webp",
+    "thumb": "assets/optimized/carousel-202402-thumb.webp"
+  },
+  "carousel/202403.jpg": {
+    "width": 4080,
+    "height": 2296,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202403-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202403-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202403-1200.webp"
+      },
+      {
+        "width": 1600,
+        "src": "assets/optimized/carousel-202403-1600.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202403-1600.webp",
+    "thumb": "assets/optimized/carousel-202403-thumb.webp"
+  },
+  "carousel/202501.jpg": {
+    "width": 1280,
+    "height": 749,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202501-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202501-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202501-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202501-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202501-1280.webp",
+    "thumb": "assets/optimized/carousel-202501-thumb.webp"
+  },
+  "carousel/202502.jpg": {
+    "width": 1280,
+    "height": 652,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202502-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202502-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202502-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202502-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202502-1280.webp",
+    "thumb": "assets/optimized/carousel-202502-thumb.webp"
+  },
+  "carousel/202503.jpg": {
+    "width": 1280,
+    "height": 973,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202503-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202503-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202503-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202503-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202503-1280.webp",
+    "thumb": "assets/optimized/carousel-202503-thumb.webp"
+  },
+  "carousel/202504.jpg": {
+    "width": 1280,
+    "height": 778,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202504-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202504-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202504-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202504-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202504-1280.webp",
+    "thumb": "assets/optimized/carousel-202504-thumb.webp"
+  },
+  "carousel/202505.jpg": {
+    "width": 1280,
+    "height": 749,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202505-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202505-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202505-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202505-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202505-1280.webp",
+    "thumb": "assets/optimized/carousel-202505-thumb.webp"
+  },
+  "carousel/202506.jpg": {
+    "width": 4032,
+    "height": 3024,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202506-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202506-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202506-1200.webp"
+      },
+      {
+        "width": 1600,
+        "src": "assets/optimized/carousel-202506-1600.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202506-1600.webp",
+    "thumb": "assets/optimized/carousel-202506-thumb.webp"
+  },
+  "carousel/202507.jpg": {
+    "width": 1280,
+    "height": 576,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202507-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202507-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202507-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202507-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202507-1280.webp",
+    "thumb": "assets/optimized/carousel-202507-thumb.webp"
+  },
+  "claudia.jpg": {
+    "width": 720,
+    "height": 1101,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/claudia-400.webp"
+      },
+      {
+        "width": 720,
+        "src": "assets/optimized/claudia-720.webp"
+      }
+    ],
+    "src": "assets/optimized/claudia-720.webp"
+  },
+  "directora.jpg": {
+    "width": 1280,
+    "height": 832,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/directora-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/directora-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/directora-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/directora-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/directora-1280.webp"
+  },
+  "fondo.png": {
+    "width": 1024,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/fondo-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/fondo-800.webp"
+      },
+      {
+        "width": 1024,
+        "src": "assets/optimized/fondo-1024.webp"
+      }
+    ],
+    "src": "assets/optimized/fondo-1024.webp"
+  },
+  "graduacion.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/graduacion-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/graduacion-800.webp"
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/graduacion-960.webp"
+      }
+    ],
+    "src": "assets/optimized/graduacion-960.webp"
+  },
+  "graduaciondos.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/graduaciondos-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/graduaciondos-800.webp"
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/graduaciondos-960.webp"
+      }
+    ],
+    "src": "assets/optimized/graduaciondos-960.webp"
+  },
+  "graduacionmuno.jpg": {
+    "width": 733,
+    "height": 449,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/graduacionmuno-400.webp"
+      },
+      {
+        "width": 733,
+        "src": "assets/optimized/graduacionmuno-733.webp"
+      }
+    ],
+    "src": "assets/optimized/graduacionmuno-733.webp"
+  },
+  "graduaciontres.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/graduaciontres-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/graduaciontres-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/graduaciontres-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/graduaciontres-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/graduaciontres-1280.webp"
+  },
+  "graduacionuno.jpg": {
+    "width": 551,
+    "height": 390,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/graduacionuno-400.webp"
+      },
+      {
+        "width": 551,
+        "src": "assets/optimized/graduacionuno-551.webp"
+      }
+    ],
+    "src": "assets/optimized/graduacionuno-551.webp"
+  },
+  "hardanny.jpg": {
+    "width": 720,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/hardanny-400.webp"
+      },
+      {
+        "width": 720,
+        "src": "assets/optimized/hardanny-720.webp"
+      }
+    ],
+    "src": "assets/optimized/hardanny-720.webp"
+  },
+  "hrr.jpg": {
+    "width": 781,
+    "height": 1259,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/hrr-400.webp"
+      },
+      {
+        "width": 781,
+        "src": "assets/optimized/hrr-781.webp"
+      }
+    ],
+    "src": "assets/optimized/hrr-781.webp"
+  },
+  "itgem.png": {
+    "width": 512,
+    "height": 512,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/itgem-400.webp"
+      },
+      {
+        "width": 512,
+        "src": "assets/optimized/itgem-512.webp"
+      }
+    ],
+    "src": "assets/optimized/itgem-512.webp"
+  },
+  "jhon.jpg": {
+    "width": 719,
+    "height": 889,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/jhon-400.webp"
+      },
+      {
+        "width": 719,
+        "src": "assets/optimized/jhon-719.webp"
+      }
+    ],
+    "src": "assets/optimized/jhon-719.webp"
+  },
+  "logo.jpg": {
+    "width": 1280,
+    "height": 704,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/logo-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/logo-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/logo-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/logo-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/logo-1280.webp"
+  },
+  "logo.png": {
+    "width": 1280,
+    "height": 751,
+    "variants": [
+      {
+        "width": 80,
+        "src": "assets/optimized/logo-80.webp"
+      },
+      {
+        "width": 160,
+        "src": "assets/optimized/logo-160.webp"
+      },
+      {
+        "width": 240,
+        "src": "assets/optimized/logo-240.webp"
+      },
+      {
+        "width": 320,
+        "src": "assets/optimized/logo-320.webp"
+      }
+    ],
+    "src": "assets/optimized/logo-320.webp"
+  },
+  "logovacacional.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "width": 160,
+        "src": "assets/optimized/logovacacional-160.webp"
+      }
+    ],
+    "src": "assets/optimized/logovacacional-160.webp"
+  },
+  "logovacacional.png": {
+    "width": 1231,
+    "height": 911,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/logovacacional-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/logovacacional-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/logovacacional-1200.webp"
+      },
+      {
+        "width": 1231,
+        "src": "assets/optimized/logovacacional-1231.webp"
+      }
+    ],
+    "src": "assets/optimized/logovacacional-1231.webp"
+  },
+  "mariae.jpg": {
+    "width": 737,
+    "height": 1125,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/mariae-400.webp"
+      },
+      {
+        "width": 737,
+        "src": "assets/optimized/mariae-737.webp"
+      }
+    ],
+    "src": "assets/optimized/mariae-737.webp"
+  },
+  "tecnicos.jpg": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/tecnicos-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/tecnicos-800.webp"
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/tecnicos-960.webp"
+      }
+    ],
+    "src": "assets/optimized/tecnicos-960.webp"
+  }
+}

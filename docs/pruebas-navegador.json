@@ -1,0 +1,225 @@
+{
+  "environment": "Chromium / Playwright",
+  "url": "http://127.0.0.1:3000",
+  "testDate": "2026-09-08",
+  "tests": [
+    {
+      "name": "Todos los HTML: cargan, un H1, sin desbordamiento a 1440 / 390 / 320 px",
+      "passed": true
+    },
+    {
+      "name": "Inicio: imagen principal cargada y todas las fotos originales presentes",
+      "passed": true
+    },
+    {
+      "name": "Filtros 5 / 5 / 3 / 5 / 18 y búsqueda sin tildes, vacío y restablecimiento",
+      "passed": true
+    },
+    {
+      "name": "Megamenú: destinos propios, Escape y foco",
+      "passed": true
+    },
+    {
+      "name": "Búsqueda local: resultados, teclado, XSS como texto y coincidencias en página",
+      "passed": true
+    },
+    {
+      "name": "Carrusel: flechas, vuelta al inicio, año y ampliación",
+      "passed": true
+    },
+    {
+      "name": "Carrusel: reproducción optativa y pausa real",
+      "passed": true
+    },
+    {
+      "name": "Modo oscuro persistente y pausa de animaciones persistente",
+      "passed": true
+    },
+    {
+      "name": "Olas: capa opaca coincide con sección destino en claro y oscuro",
+      "passed": true
+    },
+    {
+      "name": "Galería completa: todos los años, filtros y originales ampliables",
+      "passed": true
+    },
+    {
+      "name": "Programa: módulos, requisitos, video diferido y enlace de inscripción",
+      "passed": true
+    },
+    {
+      "name": "Formulario: errores, preparación local, sin fetch ni credenciales almacenadas",
+      "passed": true
+    },
+    {
+      "name": "Registro / ingreso: campos deshabilitados, sin sesión simulada",
+      "passed": true
+    },
+    {
+      "name": "Página 404 real y recursos accesibles en rutas desconocidas",
+      "passed": true
+    },
+    {
+      "name": "Menú móvil: modal, navegación interna y cierre al seleccionar",
+      "passed": true
+    },
+    {
+      "name": "Movimiento reducido del dispositivo: ondas estáticas y carrusel manual",
+      "passed": true
+    },
+    {
+      "name": "Sin JavaScript: navegación, catálogo y protección de formularios",
+      "passed": true
+    },
+    {
+      "name": "Navbar primero, sin CTA duplicado y con ingreso disponible en móvil",
+      "passed": true
+    },
+    {
+      "name": "Empezar ahora: efecto original y destino al catálogo",
+      "passed": true
+    },
+    {
+      "name": "Olas y moneda originales: animación real, tres velocidades y pausa accesible",
+      "passed": true
+    },
+    {
+      "name": "Cian exacto, año luminoso e iconos sociales originales con color de cada app",
+      "passed": true
+    },
+    {
+      "name": "Cohete original: 50 estrellas, regreso arriba sin cambiar de página y limpieza",
+      "passed": true
+    },
+    {
+      "name": "Ingreso sin fondo ni borde; sin barra móvil y WhatsApp a 20 px del borde",
+      "passed": true
+    },
+    {
+      "name": "Aquí: oleada por letra, subrayado intacto, pausa y búsqueda sin perder el efecto",
+      "passed": true
+    },
+    {
+      "name": "Apertura file://: Manrope y DM Sans cargadas sin errores CORS ni peticiones WOFF2",
+      "passed": true
+    },
+    {
+      "name": "Tipografía: párrafos, subtítulos, notas y campos legibles en escritorio y móvil",
+      "passed": true
+    },
+    {
+      "name": "Los títulos principales conservan sus tamaños anteriores y la fuente Manrope",
+      "passed": true
+    },
+    {
+      "name": "Texto ampliado: foto y tarjeta sin superposiciones, tarjetas sin recortes ni desbordamiento",
+      "passed": true
+    },
+    {
+      "name": "Accesibilidad WCAG 2.1 A/AA: plantillas en claro y oscuro",
+      "passed": true
+    },
+    {
+      "name": "Accesibilidad WCAG 2.1 A/AA: móvil y diálogos",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript, recursos fallidos ni dependencias externas al cargar",
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "label": "index.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "index.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/PNL.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/PNL.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/pedagogia.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/pedagogia.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/inscripcion.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/inscripcion.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/ingreso.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/ingreso.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/registro.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/registro.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/galeria.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/galeria.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/privacidad.html · light · 1440px",
+      "violations": []
+    },
+    {
+      "label": "vistas/privacidad.html · dark · 1440px",
+      "violations": []
+    },
+    {
+      "label": "index.html · 390px",
+      "violations": []
+    },
+    {
+      "label": "vistas/PNL.html · 390px",
+      "violations": []
+    },
+    {
+      "label": "vistas/inscripcion.html · 390px",
+      "violations": []
+    },
+    {
+      "label": "vistas/ingreso.html · 390px",
+      "violations": []
+    },
+    {
+      "label": "Menú móvil abierto",
+      "violations": []
+    },
+    {
+      "label": "Búsqueda móvil abierta",
+      "violations": []
+    }
+  ],
+  "javascriptErrors": [],
+  "unexpectedAssetErrors": [],
+  "externalRequestsBeforeVideo": [],
+  "passed": true
+}

@@ -1,0 +1,358 @@
+{
+  "index.html": {
+    "text": "Fundación Cristiana El Maná Carreras ¿Quiénes somos? Historia Experiencia Contáctenos Ingreso FUNDACIÓN CRISTIANA EL MANÁ UNIMANÁ ¡Un Futuro Brillante Te Espera! Más\n          de 15 años formando líderes íntegros en modalidades virtuales y presenciales. EMPEZAR AHORA Conozca nuestros programas: Modalidad 100% virtual con calidad internacional. Ofrecemos becas disponibles del 50% - 75%. Programas\n                  Profesionales Psicología Licenciatura en Pedagogía Licenciatura en Teología Técnica en Enfermería Técnica en Veterinaria Especializaciones Neuropsicología Educación Psicología Penitenciaria Psicología Jurídica Sexología y Terapia Nutrición Geriátrica Maestrías Maestría en Educación Maestría en Teología Maestría en Salud Publica Diplomados Diplomado en PNL (Programación\n                      Neurolingüística) Diplomado en Inclusión Educativa Diplomado en Gerontología Diplomado en PNI (Psiconeuroinmunologia) Diplomado en Sexología y Terapia Sexual ¿Quiénes somos? Somos UNIMANÁ de la Fundación Cristiana El Maná, afiliada a la Confesión Gobierno Eclesiástico Apostólico y\n        Profético Universal. Regidos por la Ley Estatutaria de la República de Colombia (Ley 133 de 1994 y Ley 115 de\n        1994), contamos con más de 15 años formando líderes. Misión Formar lideres y profesionales con excelentes bases técnicas y científicas, generadores de\n                procesos de cambio, con visión futurista, con valores éticos y espirituales; autónomos perseverantes,\n                capaces de asumir defender riesgos, derechos, respetar a los demás y fomentar la conservación del medio\n                ambiente. Visión Formar lideres y profesionales con\n                excelentes bases técnicas y\n                científicas,\n                generadores\n                de\n                procesos de cambio, con visión\n                futurista, con valores éticos y\n                espirituales;\n                autónomos\n                perseverantes, capaces de asumir\n                defender\n                riesgos,\n                derechos,\n                respetar a los demás y fomentar la\n                conservación del medio ambiente. Nuestra Historia 20 años de experiencia • Enseñanza de\n        calidad • Para toda la comunidad Los largos viajes,\n              que eran necesarios para estudiar en las grandes universidades, y el costo que tenía cada carrera, era\n              algo inalcanzable para una persona con bajos recursos económicos. Al vivir esta situación, nuestros\n              directivos empezaron a estudiar, con el fin de enseñar lo que aprendieron y que la educación superior sea\n              asequible para todos, en cada región de Colombia. De\n              esta manera, se creó la Fundación Cristiana El Maná (Unimaná) ,\n              que ofrece una educación más práctica que teórica, lo que garantiza el éxito en situaciones de la vida\n              real. Nuestra Experiencia Reviva con nosotros los mejores momentos de nuestra labor académica e institucional. 2021 Previous Next Presencia en\n            Colombia Contamos con sedes administrativas y de apoyo académico en: La Cumbre - Valle del Cauca, Colombia Santander de Quilichao - Cauca, Colombia Buenaventura - Valle del Cauca, Colombia Barranquilla - Atlantico, Colombia Bucaramanga - Santander, Colombia Alcance Global - Modalidad\n                Virtual Información de Contacto Inscríbete hoy y solicita tu beca de hasta el 75% de descuento. contacto@fundacionunimana.com © 2026 Fundación Cristiana El Maná - UNIMANÁ. Todos los derechos reservados.",
+    "links": [
+      {
+        "text": "Carreras",
+        "href": "#seccion-destino"
+      },
+      {
+        "text": "¿Quiénes somos?",
+        "href": "#third-section"
+      },
+      {
+        "text": "Historia",
+        "href": "#historia"
+      },
+      {
+        "text": "Experiencia",
+        "href": "#experiencia"
+      },
+      {
+        "text": "Contáctenos",
+        "href": "#contacto"
+      },
+      {
+        "text": "Ingreso",
+        "href": "https://forms.gle/Hw958vbgqpZ712cE8"
+      },
+      {
+        "text": "EMPEZAR AHORA",
+        "href": "#seccion-destino"
+      },
+      {
+        "text": "Psicología",
+        "href": "vistas/psicologia.html"
+      },
+      {
+        "text": "Licenciatura en Pedagogía",
+        "href": "vistas/pedagogia.html"
+      },
+      {
+        "text": "Licenciatura en Teología",
+        "href": "vistas/teologia.html"
+      },
+      {
+        "text": "Técnica en Enfermería",
+        "href": "vistas/enfermeria.html"
+      },
+      {
+        "text": "Técnica en Veterinaria",
+        "href": "vistas/veterinaria.html"
+      },
+      {
+        "text": "Neuropsicología Educación",
+        "href": "#!"
+      },
+      {
+        "text": "Psicología Penitenciaria",
+        "href": "#!"
+      },
+      {
+        "text": "Psicología Jurídica",
+        "href": "#!"
+      },
+      {
+        "text": "Sexología y Terapia",
+        "href": "#!"
+      },
+      {
+        "text": "Nutrición Geriátrica",
+        "href": "#!"
+      },
+      {
+        "text": "Maestría en Educación",
+        "href": "#!"
+      },
+      {
+        "text": "Maestría en Teología",
+        "href": "#!"
+      },
+      {
+        "text": "Maestría en Salud Publica",
+        "href": "#!"
+      },
+      {
+        "text": "Diplomado en PNL (Programación\n                      Neurolingüística)",
+        "href": "vistas/PNL.html"
+      },
+      {
+        "text": "Diplomado en Inclusión Educativa",
+        "href": "vistas/InclusionEducativaYNeurodiversidad.html"
+      },
+      {
+        "text": "Diplomado en Gerontología",
+        "href": "vistas/Gerontologia.html"
+      },
+      {
+        "text": "Diplomado en PNI (Psiconeuroinmunologia)",
+        "href": "vistas/Psiconeuroinmunologia.html"
+      },
+      {
+        "text": "Diplomado en Sexología y Terapia Sexual",
+        "href": "vistas/SexologiaYTerapiaSexual.html"
+      },
+      {
+        "text": "",
+        "href": "#hero-section"
+      },
+      {
+        "text": "",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=contacto@fundacionunimana.com"
+      },
+      {
+        "text": "",
+        "href": "https://www.facebook.com/profile.php?id=100084423895766"
+      },
+      {
+        "text": "",
+        "href": "https://www.youtube.com/@Fundaci%C3%B3nUniversitariaUniman%C3%A1"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      },
+      {
+        "text": "",
+        "href": "https://drive.google.com/file/d/1q9kEWkfo4C3ZeC2wzSzEIW6ajwv6Lg3_/view?usp=sharing"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      }
+    ],
+    "frames": []
+  },
+  "Gerontologia.html": {
+    "text": "Curso Especializado en Gerontología - UNIMANÁ Descripción Módulos Contacto Curso Especializado en Gerontología Invierte en tu futuro profesional con nuestros planes de formación flexible. Descripción del Programa La gerontología ofrece un estudio integral del envejecimiento que permite promover una vejez activa y saludable en respuesta al acelerado cambio demográfico actual. El programa aborda problemas reales como la fragilidad, dependencia, soledad y enfermedades crónicas asociadas. El egresado será un gerontólogo integrador con competencias biomédicas, de políticas públicas y psicogerontología. Podrá gestionar políticas de envejecimiento, implementar programas de atención integral y promover redes de apoyo sociofamiliares. Duración: Total aproximado: 750 horas (cerca de 19 meses). Ciclos de formación modular: Básico (200h), Intermedio (200h), Avanzado (200h) y Experto (150h). Introducción al Curso Video explicativo del programa de Gerontología. Módulos del Curso Nivel Básico Introducción al envejecimiento Demografía del envejecimiento Biología del envejecimiento normal Psicología del adulto mayor Nivel Intermedio Salud y atención geriátrica Enfermedades prevalentes Diabetes e infraestructura Técnicas de prevención y cuidado Nivel Avanzado Políticas y servicios gerontológicos Modelos de atención integral Cuidado domiciliario e institucional Gestión de proyectos sociales Nivel Experto Investigación y liderazgo Proyectos de investigación aplicada Innovación en servicios para mayores Liderazgo en equipos multidisciplinarios Contactos Si tienes alguna pregunta o necesitas ayuda, no dudes en\n                    contactarnos. Teléfono +57 311 645 0990 Correo contacto@fundacionunimana.com Escribir un correo Ubicación Sedes en Colombia y Modalidad Virtual",
+    "links": [
+      {
+        "text": "Descripción",
+        "href": "#descripcion"
+      },
+      {
+        "text": "Módulos",
+        "href": "#modulos"
+      },
+      {
+        "text": "Contacto",
+        "href": "#contactos"
+      },
+      {
+        "text": "Correo contacto@fundacionunimana.com Escribir un correo",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=contacto@fundacionunimana.com"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      }
+    ],
+    "frames": [
+      {
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PT6zEhrBaI0?si=Hmdp93z0mznP3klg",
+        "title": "YouTube video player",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        "referrerpolicy": "strict-origin-when-cross-origin",
+        "allowfullscreen": ""
+      }
+    ]
+  },
+  "InclusionEducativaYNeurodiversidad.html": {
+    "text": "Curso de Inclusión Educativa y Neurodiversidad - UNIMANÁ Descripción Módulos Contacto Curso de Inclusión Educativa y Neurodiversidad Invierte en tu futuro profesional con nuestros planes de formación flexible. Descripción del Programa Este programa busca garantizar el derecho a una educación de calidad superando barreras de discapacidad o cultura, bajo el respaldo normativo de la Ley 1618 de 2013 y el Decreto 1421 de 2017 en Colombia, adoptando una mirada centrada en las fortalezas cognitivas. El egresado dominará teorías del neurodesarrollo y condiciones como TEA, TDAH y dislexia. Desarrollará estrategias multisensoriales, adaptaciones curriculares avanzadas y guiará procesos de inclusión en el aula. Duración: Total del programa: 240 horas. Formación distribuida equitativamente en 4 niveles de 60 horas cada uno para un perfil educativo de vanguardia. Introducción al Curso Video explicativo del programa de Inclusión Educativa y Neurodiversidad. Módulos del Curso Fase Inicial Bases y diagnóstico educativo Fundamentos de la Neurodiversidad Bases neurobiológicas del aprendizaje Detección y cribados psicopedagógicos Fase Práctica Estrategias de enseñanza Enseñanza multisensorial y rutinas Regulación emocional y social Adaptaciones curriculares avanzadas Fase de Integración Comunidad e innovación Trabajo con familias y comunidad Investigación aplicada Innovación en neuroeducación e IA Fase Avanzada Gestión y diseño curricular Políticas en neurodiversidad Diseño curricular inclusivo Estrategias didácticas aplicadas Contactos Si tienes alguna pregunta o necesitas ayuda, no dudes en\n                    contactarnos. Teléfono +57 311 645 0990 Correo contacto@fundacionunimana.com Escribir un correo Ubicación Sedes en Colombia y Modalidad Virtual",
+    "links": [
+      {
+        "text": "Descripción",
+        "href": "#descripcion"
+      },
+      {
+        "text": "Módulos",
+        "href": "#modulos"
+      },
+      {
+        "text": "Contacto",
+        "href": "#contactos"
+      },
+      {
+        "text": "Correo contacto@fundacionunimana.com Escribir un correo",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=contacto@fundacionunimana.com"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      }
+    ],
+    "frames": [
+      {
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PT6zEhrBaI0?si=Hmdp93z0mznP3klg",
+        "title": "YouTube video player",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        "referrerpolicy": "strict-origin-when-cross-origin",
+        "allowfullscreen": ""
+      }
+    ]
+  },
+  "PNL.html": {
+    "text": "Curso de Programación Neurolingüística (PNL) - UNIMANÁ Descripción Módulos Contacto Programación Neurolingüística (PNL) Invierte en tu futuro profesional con nuestros planes de formación flexible. Descripción del Programa La Programación Neurolingüística (PNL) es un enfoque multidisciplinario de comunicación y cambio personal cuya efectividad ha sido validada en contextos educativos y organizacionales. Responde a necesidades sociales como el desarrollo del liderazgo, la comunicación efectiva y el bienestar personal, integrando técnicas de vanguardia. El egresado será un facilitador comunicacional y coach capaz de diseñar y liderar procesos de cambio en personas y organizaciones, aplicando PNL para mejorar el aprendizaje y el rendimiento en gerencia, salud, educación o deporte. Duración: Total aproximado: 550 horas (aprox. 11 meses). Distribuido en Nivel Básico (150h), Intermedio (150h), Avanzado (150h) y Experto (100h). Introducción al Curso Video explicativo del programa de Programación Neurolingüística (PNL). Módulos del Curso Nivel Básico Fundamentos e historia inicial Historia y principios básicos Presuposiciones de la PNL Conocimientos de comunicación Nivel Intermedio Aplicaciones prácticas de PNL Anclajes y sub-modalidades Patrón Swish y rapport Estilos de comunicación Nivel Avanzado PNL Profesional avanzada Liderazgo y modelado avanzado Estrategias de negociación Teoría del cambio Nivel Experto Integración e Investigación Investigación en PNL Neurociencia del lenguaje Neuroventas e inteligencia emocional Contactos Si tienes alguna pregunta o necesitas ayuda, no dudes en\n                    contactarnos. Teléfono +57 311 645 0990 Correo contacto@fundacionunimana.com Escribir un correo Ubicación Sedes en Colombia y Modalidad Virtual",
+    "links": [
+      {
+        "text": "Descripción",
+        "href": "#descripcion"
+      },
+      {
+        "text": "Módulos",
+        "href": "#modulos"
+      },
+      {
+        "text": "Contacto",
+        "href": "#contactos"
+      },
+      {
+        "text": "Correo contacto@fundacionunimana.com Escribir un correo",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=contacto@fundacionunimana.com"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      }
+    ],
+    "frames": [
+      {
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PT6zEhrBaI0?si=Hmdp93z0mznP3klg",
+        "title": "YouTube video player",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        "referrerpolicy": "strict-origin-when-cross-origin",
+        "allowfullscreen": ""
+      }
+    ]
+  },
+  "Psiconeuroinmunologia.html": {
+    "text": "Curso de Psiconeuroinmunología (PNI) - UNIMANÁ Descripción Módulos Contacto Curso de Psiconeuroinmunología Invierte en tu futuro profesional con nuestros planes de formación flexible. Descripción del Programa La psiconeuroinmunología integra aspectos psicológicos, respuestas cerebrales y actividad inmunológica. Responde a la necesidad global de abordar la salud de manera holística, entendiendo la influencia directa del estrés y las emociones en las enfermedades crónicas y la inmunidad. El egresado conocerá la fisiología de los sistemas nervioso central, endocrino e inmune. Diseñará intervenciones de manejo de estrés y estrategias multidisciplinarias en clínicas, bienestar organizacional o salud pública. Duración: Total aproximado: 160 horas (4-6 meses). Modelo por competencias distribuido equitativamente en 4 niveles de 40 horas cada uno. Introducción al Curso Video explicativo del programa de Psiconeuroinmunología (PNI). Módulos del Curso Nivel Básico Fundamentos de la PNI Fisiología del estrés Eje hipotálamo-hipófisis-adrenal Estructura del sistema inmune Nivel Intermedio Interacciones mente-cuerpo Estrés crónico en patologías Infecciones, allergies y autoinmunes Influencia de ansiedad y trauma Nivel Avanzado PNI en escenarios clínicos PNI en embarazo y geriatría Abordaje en cáncer y cardio Diseño de intervenciones clínicas Nivel Experto Investigación y gestión Investigación avanzada en salud Innovación y bio-sensores Políticas de salud integrativa Contactos Si tienes alguna pregunta o necesitas ayuda, no dudes en\n                    contactarnos. Teléfono +57 311 645 0990 Correo contacto@fundacionunimana.com Escribir un correo Ubicación Sedes en Colombia y Modalidad Virtual",
+    "links": [
+      {
+        "text": "Descripción",
+        "href": "#descripcion"
+      },
+      {
+        "text": "Módulos",
+        "href": "#modulos"
+      },
+      {
+        "text": "Contacto",
+        "href": "#contactos"
+      },
+      {
+        "text": "Correo contacto@fundacionunimana.com Escribir un correo",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=contacto@fundacionunimana.com"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      }
+    ],
+    "frames": [
+      {
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PT6zEhrBaI0?si=Hmdp93z0mznP3klg",
+        "title": "YouTube video player",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        "referrerpolicy": "strict-origin-when-cross-origin",
+        "allowfullscreen": ""
+      }
+    ]
+  },
+  "SexologiaYTerapiaSexual.html": {
+    "text": "Curso de Sexología y Terapia Sexual - UNIMANÁ Descripción Módulos Contacto Curso de Sexología y Terapia Sexual Invierte en tu futuro profesional con nuestros planes de formación flexible. Descripción del Programa Este programa científico estudia la sexualidad humana en sus dimensiones biológica, psicológica, social y cultural. Promueve un enfoque positivo para experiencias placenteras y seguras, respondiendo a la gran demanda en salud sexual, relaciones de pareja y educación afectivo-sexual. El graduado será un sexólogo clínico-educador interdisciplinario capacitado para trabajar en clínicas, hospitales, programas escolares y ONGs, combinando conocimientos médicos y psicológicos con sensibilidad cultural e inclusión de género. Duración: Total aproximado: 640 horas (unos 16 meses). Distribución modular: Básico (160h), Intermedio (180h), Avanzado (180h) y Experto (120h). Introducción al Curso Video explicativo del programa de Sexología y Terapia Sexual. Módulos del Curso Módulo 1: Fundamentos Bases de la sexualidad Bases biológicas humanas Bases sociales de la sexualidad Introducción clínica Módulo 2: Educación Educación y prevención Estrategias educativas integrales Prevención de riesgos en salud Educación afectivo-sexual Módulo 3: Clínica Clínica y terapéutica Diagnóstico e intervención clínica Disfunciones sexuales Orientación de pareja y diversidad Módulo 4: Experto Investigación y liderazgo Formación de formadores Metodologías de investigación Liderazgo institucional Contactos Si tienes alguna pregunta o necesitas ayuda, no dudes en\n                    contactarnos. Teléfono +57 311 645 0990 Correo contacto@fundacionunimana.com Escribir un correo Ubicación Sedes en Colombia y Modalidad Virtual",
+    "links": [
+      {
+        "text": "Descripción",
+        "href": "#descripcion"
+      },
+      {
+        "text": "Módulos",
+        "href": "#modulos"
+      },
+      {
+        "text": "Contacto",
+        "href": "#contactos"
+      },
+      {
+        "text": "Correo contacto@fundacionunimana.com Escribir un correo",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=contacto@fundacionunimana.com"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      }
+    ],
+    "frames": [
+      {
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PT6zEhrBaI0?si=Hmdp93z0mznP3klg",
+        "title": "YouTube video player",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        "referrerpolicy": "strict-origin-when-cross-origin",
+        "allowfullscreen": ""
+      }
+    ]
+  },
+  "psicologia.html": {
+    "text": "Curso de Psicología - Información y Pagos Descripción Módulos Contacto Curso Especializado en Psicología Cognitiva Invierte en tu futuro profesional con nuestros planes de formación flexible. Descripción del Programa El Curso de Psicología Cognitiva es un programa de formación especializada diseñado para dotar a los\n                    estudiantes con los conocimientos teóricos y las herramientas prácticas necesarias para comprender,\n                    evaluar e intervenir en los procesos mentales humanos. El curso aborda desde los fundamentos históricos hasta las aplicaciones clínicas más actuales, con un\n                    enfoque práctico y centrado en el desarrollo de competencias profesionales sólidas. Introducción al Curso Video explicativo del programa de Psicología Cognitiva. Módulos del Curso Módulo 1: Introducción Fundamentos y perspectivas históricas Conceptos fundamentales Historia de la psicología cognitiva Estructura cognitiva humana 4 lecciones • 1.5h Módulo 2: Percepción El proceso perceptual humano Procesos bottom-up y top-down Atención selectiva Constancia perceptual 5 lecciones • 2h Módulo 3: Memoria Tipos, funciones y patologías Memoria sensorial Memoria de trabajo Memoria a largo plazo 6 lecciones • 2.5h Módulo 4: Lenguaje Adquisición y uso del lenguaje Bases neurológicas Desarrollo del lenguaje Comunicación efectiva 5 lecciones • 2h Contactos Si tienes alguna pregunta o necesitas ayuda, no dudes en\n                    contactarnos. Teléfono +57 311 645 0990 Correo contacto@fundacionunimana.com Escribir un correo Ubicación Sedes en Colombia y Modalidad Virtual",
+    "links": [
+      {
+        "text": "Descripción",
+        "href": "#descripcion"
+      },
+      {
+        "text": "Módulos",
+        "href": "#modulos"
+      },
+      {
+        "text": "Contacto",
+        "href": "#contactos"
+      },
+      {
+        "text": "Correo contacto@fundacionunimana.com Escribir un correo",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=contacto@fundacionunimana.com"
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/573116450990"
+      }
+    ],
+    "frames": [
+      {
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/PT6zEhrBaI0?si=Hmdp93z0mznP3klg",
+        "title": "YouTube video player",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+        "referrerpolicy": "strict-origin-when-cross-origin",
+        "allowfullscreen": ""
+      }
+    ]
+  }
+}
