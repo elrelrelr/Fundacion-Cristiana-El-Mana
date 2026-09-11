@@ -910,13 +910,13 @@
     let newSrc = '';
     
     if (month === 0) {
-      newSrc = 'imagenes/logo_gafas.png';
+      newSrc = base + 'imagenes/logo_gafas.png';
     } else if (month === 6) {
-      newSrc = 'imagenes/logo_colombiano.png';
+      newSrc = base + 'imagenes/logo_colombiano.png';
     } else if (month === 8) { // Septiembre
-      newSrc = 'imagenes/logo_amoryamistad.jpg';
+      newSrc = base + 'imagenes/logo_amoryamistad.jpg';
     } else if (month === 11) {
-      newSrc = 'imagenes/logo_navideño.png';
+      newSrc = base + 'imagenes/logo_navideño.png';
     }
     
     if (newSrc) {
