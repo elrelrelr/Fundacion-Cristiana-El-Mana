@@ -487,6 +487,54 @@
     "src": "assets/optimized/carousel-202507-1280.webp",
     "thumb": "assets/optimized/carousel-202507-thumb.webp"
   },
+  "carousel/202601.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202601-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202601-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202601-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202601-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202601-1280.webp",
+    "thumb": "assets/optimized/carousel-202601-thumb.webp"
+  },
+  "carousel/202602.jpg": {
+    "width": 1280,
+    "height": 576,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/carousel-202602-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/carousel-202602-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/carousel-202602-1200.webp"
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/carousel-202602-1280.webp"
+      }
+    ],
+    "src": "assets/optimized/carousel-202602-1280.webp",
+    "thumb": "assets/optimized/carousel-202602-thumb.webp"
+  },
   "claudia.jpg": {
     "width": 720,
     "height": 1101,
@@ -774,6 +822,98 @@
       }
     ],
     "src": "assets/optimized/logovacacional-1231.webp"
+  },
+  "logo_amoryamistad.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/logo_amoryamistad-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/logo_amoryamistad-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/logo_amoryamistad-1200.webp"
+      },
+      {
+        "width": 1254,
+        "src": "assets/optimized/logo_amoryamistad-1254.webp"
+      }
+    ],
+    "src": "assets/optimized/logo_amoryamistad-1254.webp"
+  },
+  "logo_colombiano.png": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/logo_colombiano-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/logo_colombiano-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/logo_colombiano-1200.webp"
+      },
+      {
+        "width": 1254,
+        "src": "assets/optimized/logo_colombiano-1254.webp"
+      }
+    ],
+    "src": "assets/optimized/logo_colombiano-1254.webp"
+  },
+  "logo_gafas.png": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/logo_gafas-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/logo_gafas-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/logo_gafas-1200.webp"
+      },
+      {
+        "width": 1254,
+        "src": "assets/optimized/logo_gafas-1254.webp"
+      }
+    ],
+    "src": "assets/optimized/logo_gafas-1254.webp"
+  },
+  "logo_navideño.png": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "width": 400,
+        "src": "assets/optimized/logo_navideño-400.webp"
+      },
+      {
+        "width": 800,
+        "src": "assets/optimized/logo_navideño-800.webp"
+      },
+      {
+        "width": 1200,
+        "src": "assets/optimized/logo_navideño-1200.webp"
+      },
+      {
+        "width": 1254,
+        "src": "assets/optimized/logo_navideño-1254.webp"
+      }
+    ],
+    "src": "assets/optimized/logo_navideño-1254.webp"
   },
   "mariae.jpg": {
     "width": 737,
