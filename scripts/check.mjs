@@ -135,14 +135,26 @@ for (const [i, file] of [
   assert(fontData[i]?.equals(original), 'La fuente integrada no coincide con el original: ' + file);
 }
 assert(programs.length === 18, 'El catálogo original debe mantener sus 18 programas');
-assert(gallery.length === 22, 'Deben conservarse las 22 fotografías del carrusel original');
+assert(gallery.length === 24, 'Deben conservarse las 24 fotografías del carrusel actual');
 assert(
   (await read('index.html')).includes('id="third-section"') &&
     (await read('index.html')).includes('id="seccion-destino"'),
   'Faltan anclas históricas',
 );
-for (const p of programs)
+for (const p of programs) {
   assert(p.modules.length >= 4, p.name + ': faltan módulos/ejes de estudio');
+  assert(Boolean(p.graduateProfile), p.name + ': falta perfil del egresado');
+  assert(p.competencies?.length === 3, p.name + ': faltan los tres grupos de competencias');
+  assert(p.careerAreas?.length === 4, p.name + ': faltan áreas de aplicación');
+  assert(['pdf', 'editorial'].includes(p.source?.kind), p.name + ': falta identificar la fuente');
+  const html = await read('vistas/' + p.file);
+  for (const id of ['video', 'perfil', 'salidas', 'fuente'])
+    assert(html.includes(`id="${id}"`), p.name + ': falta la sección ' + id);
+  assert(
+    html.includes('data-video-card') || html.includes('video-placeholder'),
+    p.name + ': falta el reproductor o el aviso de video introductorio',
+  );
+}
 for (const f of ['ingreso', 'registro']) {
   const html = await read(`vistas/${f}.html`);
   assert(html.includes('<fieldset disabled'), f + ': formulario de cuenta sin bloquear');

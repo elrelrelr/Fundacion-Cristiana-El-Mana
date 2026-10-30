@@ -6,16 +6,32 @@ Se trabajó sobre el repositorio `elrelrelr/Fundaci-n-Cristiana-El-Man-`, commit
 
 El documento de recomendaciones asumía varias páginas de psicología que no correspondían al catálogo real. Se priorizaron los **18 programas que sí aparecían enlazados**. No se agregaron ofertas de psicología clínica, organizacional o social, ni maestrías clínicas, sin una oferta institucional que las respaldara.
 
+## Actualización con el PDF suministrado
+
+Se recibió el documento `cursos de la universidad.pdf` (15 páginas) desde el enlace de MediaFire indicado por el propietario. Cinco fichas se marcaron con `source.kind: 'pdf'` y muestran páginas de referencia:
+
+| Ruta                                      | Páginas del PDF | Intensidad y duración de referencia                   |
+| ----------------------------------------- | --------------- | ----------------------------------------------------- |
+| `PNL.html`                                | 1–2             | 550 h, aprox. 11 meses                                |
+| `Gerontologia.html`                       | 3–4             | 750 h, aprox. 19 meses                                |
+| `SexologiaYTerapiaSexual.html`            | 5–6             | 640 h, aprox. 16 meses                                |
+| `Psiconeuroinmunologia.html`              | 8–10            | 160 h; el PDF sugiere 4–6 meses                       |
+| `InclusionEducativaYNeurodiversidad.html` | 11–15           | 240 h: cuatro niveles de 60 h, con 12 módulos de 20 h |
+
+Las demás 13 fichas se marcaron con `source.kind: 'editorial'`. Su perfil del egresado, competencias, áreas de aplicación y enfoque son redacción orientativa acorde con el área de estudio; no se tomaron del PDF. Cada ficha incluye una sección **Fuente y alcance** que deja clara esa diferencia.
+
+En las 18 fichas se añadieron: perfil del egresado, tres grupos de competencias, cuatro áreas de aplicación, enfoque del programa y nota de alcance profesional. No se agregaron precios, fechas de inicio, resoluciones, avales ni titulaciones habilitantes. Las afirmaciones del PDF sobre avales, acreditación o eficacia no se reprodujeron como hechos verificados.
+
 ## Fichas que ya existían
 
-| Ruta conservada | Contenido conservado | Duración publicada |
-|---|---|---|
-| `psicologia.html` | Curso especializado en Psicología Cognitiva: introducción, percepción, memoria y lenguaje; 4/5/6/5 lecciones | Los módulos suman 8 h; no se usa como duración de carrera |
-| `PNL.html` | Básico, intermedio, avanzado y experto; temas originales | 550 h, aproximadamente 11 meses |
-| `InclusionEducativaYNeurodiversidad.html` | Cuatro fases con sus temas originales | 240 h, cuatro niveles de 60 h |
-| `Gerontologia.html` | Cuatro niveles, dimensiones del envejecimiento, políticas e investigación | 750 h, aproximadamente 19 meses |
-| `Psiconeuroinmunologia.html` | Cuatro niveles, fisiología, interacciones, escenarios e investigación | 160 h, aproximadamente 4–6 meses |
-| `SexologiaYTerapiaSexual.html` | Fundamentos, educación, clínica e investigación | 640 h, aproximadamente 16 meses |
+| Ruta conservada                           | Contenido conservado                                                                                         | Duración publicada                                        |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| `psicologia.html`                         | Curso especializado en Psicología Cognitiva: introducción, percepción, memoria y lenguaje; 4/5/6/5 lecciones | Los módulos suman 8 h; no se usa como duración de carrera |
+| `PNL.html`                                | Básico, intermedio, avanzado y experto; temas del PDF                                                        | 550 h, aproximadamente 11 meses                           |
+| `InclusionEducativaYNeurodiversidad.html` | Cuatro niveles y 12 módulos de 20 h según el PDF                                                             | 240 h, cuatro niveles de 60 h                             |
+| `Gerontologia.html`                       | Cuatro niveles, dimensiones del envejecimiento, políticas e investigación                                    | 750 h, aproximadamente 19 meses                           |
+| `Psiconeuroinmunologia.html`              | Cuatro niveles, fisiología, interacciones, escenarios e investigación                                        | 160 h, aproximadamente 4–6 meses sugeridos                |
+| `SexologiaYTerapiaSexual.html`            | Fundamentos, educación, clínica e investigación                                                              | 640 h, aproximadamente 16 meses                           |
 
 Las fechas y la vigencia de esas intensidades requieren confirmación. El repositorio no contenía precios publicados en las fichas, aunque tenía estilos y un título que mencionaban pagos: **no se agregaron valores ni botones de cobro**.
 
@@ -62,7 +78,8 @@ En ellas, las descripciones y ejes temáticos son **redacción editorial orienta
 
 - Todas las imágenes originales permanecen sin modificación en `imagenes/`.
 - Todas las fotos del carrusel siguen disponibles, incluidas 2016 y 2018.
-- Los cinco videos anteriores y el video de Psicología usaban el mismo ID de YouTube. Se conserva ese ID como video enlazado originalmente, con carga bajo demanda y enlace alternativo. No se afirma haber verificado que sea un video específico para cada programa.
+- Los cinco videos anteriores y el video de Psicología usaban el mismo ID de YouTube. Se conserva ese ID como enlace institucional secundario, mientras no se defina un `introVideo` propio para el programa. No se afirma haber verificado que sea un video específico para cada programa.
+- Cada ficha tiene un área de video introductorio configurable con `introVideo` e `introVideoTitle` en `data/programas.mjs`. Si no hay enlace válido, muestra «Video introductorio próximamente». Cuando se define un enlace de YouTube, el reproductor se genera con carga diferida: no contacta a YouTube hasta que la persona pulsa reproducir.
 - Se conservan WhatsApp, Facebook, YouTube, el correo, teléfono, sedes, logo, modo oscuro, búsqueda, carrusel, cohete y reverso de la moneda de WhatsApp. Las animaciones se simplificaron y pueden pausarse.
 - El PDF se recuperó del enlace público de Drive que ya estaba en el pie y se guardó íntegro en `documentos/folleto-institucional.pdf`. **No es un folleto actualizado**: puede contener cifras o afirmaciones anteriores y debe revisarse por la institución. No se incorporaron esas cifras a la página.
 

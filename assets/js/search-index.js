@@ -5,126 +5,126 @@ window.UNIMANA_SEARCH = [
     title: 'Psicología',
     label: 'Profesionales y técnicos',
     description:
-      'Explora la percepción, la memoria y el lenguaje en nuestro curso especializado en Psicología Cognitiva.',
+      'Explora la percepción, la memoria y el lenguaje en nuestro curso especializado en Psicología Cognitiva. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/psicologia.html',
   },
   {
     title: 'Licenciatura en Pedagogía',
     label: 'Profesionales y técnicos',
     description:
-      'Acércate al aprendizaje, la didáctica y la construcción de entornos educativos más humanos e inclusivos.',
+      'Acércate al aprendizaje, la didáctica y la construcción de entornos educativos más humanos e inclusivos. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/pedagogia.html',
   },
   {
     title: 'Licenciatura en Teología',
     label: 'Profesionales y técnicos',
     description:
-      'Profundiza en la reflexión bíblica, el pensamiento cristiano y el servicio responsable a la comunidad.',
+      'Profundiza en la reflexión bíblica, el pensamiento cristiano y el servicio responsable a la comunidad. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/teologia.html',
   },
   {
     title: 'Técnica en Enfermería',
     label: 'Profesionales y técnicos',
     description:
-      'Conoce los fundamentos del cuidado, la promoción de la salud y el apoyo a los equipos de atención.',
+      'Conoce los fundamentos del cuidado, la promoción de la salud y el apoyo a los equipos de atención. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/enfermeria.html',
   },
   {
     title: 'Técnica en Veterinaria',
     label: 'Profesionales y técnicos',
     description:
-      'Explora el bienestar animal, la prevención y el apoyo responsable en entornos de cuidado veterinario.',
+      'Explora el bienestar animal, la prevención y el apoyo responsable en entornos de cuidado veterinario. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/veterinaria.html',
   },
   {
     title: 'Neuropsicología de la Educación',
     label: 'Especializaciones',
     description:
-      'Relaciona los procesos cognitivos y el desarrollo con los desafíos cotidianos de la educación.',
+      'Relaciona los procesos cognitivos y el desarrollo con los desafíos cotidianos de la educación. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/neuropsicologia-educacion.html',
   },
   {
     title: 'Psicología Penitenciaria',
     label: 'Especializaciones',
     description:
-      'Una mirada psicológica y ética a la convivencia, la salud mental y la reintegración social.',
+      'Una mirada psicológica y ética a la convivencia, la salud mental y la reintegración social. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/psicologia-penitenciaria.html',
   },
   {
     title: 'Psicología Jurídica',
     label: 'Especializaciones',
     description:
-      'Conoce la relación entre el comportamiento, los derechos y los contextos de actuación de la justicia.',
+      'Conoce la relación entre el comportamiento, los derechos y los contextos de actuación de la justicia. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/psicologia-juridica.html',
   },
   {
     title: 'Sexología y Terapia',
     label: 'Especializaciones',
     description:
-      'Profundiza en la sexualidad humana desde la educación, los derechos y el trabajo interdisciplinario.',
+      'Profundiza en la sexualidad humana desde la educación, los derechos y el trabajo interdisciplinario. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/sexologia-terapia.html',
   },
   {
     title: 'Nutrición Geriátrica',
     label: 'Especializaciones',
     description:
-      'Explora los factores nutricionales, sociales y de cuidado relacionados con el envejecimiento.',
+      'Explora los factores nutricionales, sociales y de cuidado relacionados con el envejecimiento. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/nutricion-geriatrica.html',
   },
   {
     title: 'Maestría en Educación',
     label: 'Maestrías',
     description:
-      'Una aproximación a la investigación, la innovación pedagógica y el liderazgo educativo.',
+      'Una aproximación a la investigación, la innovación pedagógica y el liderazgo educativo. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/maestria-educacion.html',
   },
   {
     title: 'Maestría en Teología',
     label: 'Maestrías',
     description:
-      'Investiga el pensamiento teológico y su relación con los desafíos de la comunidad contemporánea.',
+      'Investiga el pensamiento teológico y su relación con los desafíos de la comunidad contemporánea. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/maestria-teologia.html',
   },
   {
     title: 'Maestría en Salud Pública',
     label: 'Maestrías',
     description:
-      'Conoce enfoques de promoción, prevención y gestión orientados al bienestar de las comunidades.',
+      'Conoce enfoques de promoción, prevención y gestión orientados al bienestar de las comunidades. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/maestria-salud-publica.html',
   },
   {
     title: 'Programación Neurolingüística (PNL)',
     label: 'Diplomados',
     description:
-      'Estudia modelos de comunicación y desarrollo personal con una mirada crítica a su alcance y evidencia.',
+      'Estudia modelos de comunicación y desarrollo personal con una mirada crítica a su alcance y evidencia. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/PNL.html',
   },
   {
     title: 'Inclusión Educativa y Neurodiversidad',
     label: 'Diplomados',
     description:
-      'Reconoce la diversidad del aprendizaje y construye estrategias para una educación más inclusiva.',
+      'Reconoce la diversidad del aprendizaje y construye estrategias para una educación más inclusiva. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/InclusionEducativaYNeurodiversidad.html',
   },
   {
     title: 'Gerontología',
     label: 'Diplomados',
     description:
-      'Estudia el envejecimiento desde una mirada integral, humana y conectada con la comunidad.',
+      'Estudia el envejecimiento desde una mirada integral, humana y conectada con la comunidad. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/Gerontologia.html',
   },
   {
     title: 'Psiconeuroinmunología (PNI)',
     label: 'Diplomados',
     description:
-      'Explora las relaciones entre procesos psicológicos, sistema nervioso, hormonas e inmunidad.',
+      'Explora las relaciones entre procesos psicológicos, sistema nervioso, hormonas e inmunidad. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/Psiconeuroinmunologia.html',
   },
   {
     title: 'Sexología y Terapia Sexual',
     label: 'Diplomados',
     description:
-      'Un acercamiento integral a la sexualidad humana, la educación y el acompañamiento interdisciplinario.',
+      'Un acercamiento integral a la sexualidad humana, la educación y el acompañamiento interdisciplinario. Perfil del egresado, competencias y áreas de aplicación.',
     url: 'vistas/SexologiaYTerapiaSexual.html',
   },
   {

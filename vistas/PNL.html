@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- PÁGINA GENERADA. Cambia el contenido en scripts/build.mjs y las piezas comunes en scripts/templates.mjs.
 Para colores y letras usa style.css; para acciones usa index.js. Ejecuta npm run build al terminar.
 Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de plantillas. -->
@@ -750,8 +750,8 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                     focusable="false"
                   >
                     <path d="M4 12h15M13 6l6 6-6 6" /></svg></a
-                ><a class="text-link" href="#modulos"
-                  >Explora el contenido
+                ><a class="text-link" href="#perfil"
+                  >Perfil del egresado
                   <svg
                     class="icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -904,14 +904,15 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
           </div>
         </dl>
         <p class="facts-note">
-          Duración publicada en el sitio original. Confirma calendario, intensidad y vigencia con
-          admisiones.
+          Intensidad y duración de referencia del PDF (pp. 1–2): 550 horas, aprox. 11 meses.
+          Confirma calendario y vigencia con admisiones.
         </p>
         <!-- Enlaces para ir directamente a las secciones de esta ficha. -->
         <nav class="course-nav" aria-label="Secciones del programa">
-          <a href="#descripcion">Descripción</a><a href="#modulos">Plan de estudio</a
-          ><a href="#perfil">Tu aprendizaje</a><a href="#requisitos">Requisitos</a
-          ><a href="#becas">Becas</a><a href="#comunidad">Comunidad</a>
+          <a href="#descripcion">Descripción</a><a href="#video">Video introductorio</a
+          ><a href="#modulos">Plan de estudio</a><a href="#perfil">Perfil del egresado</a
+          ><a href="#salidas">Áreas de aplicación</a><a href="#requisitos">Requisitos</a
+          ><a href="#becas">Becas</a><a href="#comunidad">Comunidad</a><a href="#fuente">Fuente</a>
         </nav>
         <div class="course-layout">
           <!-- Contenido completo del programa, tomado de data/programas.mjs. -->
@@ -956,19 +957,89 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                   </p>
                 </div>
               </div>
+              <div class="approach-note">
+                <h3>Enfoque del programa</h3>
+                <p>
+                  El PDF plantea integrar PNL, comunicación y aprendizaje activo con una mirada
+                  crítica. La web no traslada las afirmaciones de eficacia clínica o respaldo
+                  institucional del documento como hechos verificados; mantiene la advertencia sobre
+                  los límites de la evidencia.
+                </p>
+              </div>
+            </section>
+            <!-- Video introductorio: se configura en data/programas.mjs con introVideo. -->
+            <section class="course-block" id="video">
+              <span class="eyebrow">CONOCE EL PROGRAMA</span>
+              <h2>Video introductorio</h2>
+              <!-- AVISO DE VIDEO. El espacio queda listo para publicar el video introductorio. -->
+              <div
+                class="video-placeholder"
+                role="note"
+                aria-label="Video introductorio próximamente"
+              >
+                <span class="video-placeholder-icon"
+                  ><svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="m8 4 12 8-12 8V4Z" /></svg
+                ></span>
+                <h3>Video introductorio próximamente</h3>
+                <p>
+                  Estamos preparando este espacio para presentar el programa. Mientras tanto, puedes
+                  revisar el plan de estudio o solicitar información a admisiones.
+                </p>
+                <a class="text-link" href="inscripcion.html?programa=pnl#solicitud"
+                  >Solicitar información
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M4 12h15M13 6l6 6-6 6" /></svg
+                ></a>
+                <p class="video-legacy-note">
+                  También puedes ver el
+                  <a
+                    href="https://www.youtube.com/watch?v=PT6zEhrBaI0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >video institucional de UNIMANÁ</a
+                  >.
+                </p>
+              </div>
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
             <section class="course-block" id="modulos">
               <div class="course-block-heading">
                 <div>
                   <span class="eyebrow">PASO A PASO</span>
-                  <h2>Módulos del programa</h2>
+                  <h2>Estructura curricular</h2>
                 </div>
-                <span class="content-label">Contenido publicado</span>
+                <span class="content-label">Según PDF suministrado</span>
               </div>
               <p>
-                Conservamos los módulos publicados en el sitio institucional. Consulta con
-                admisiones su vigencia y las condiciones de desarrollo.
+                La estructura siguiente resume el PDF suministrado por la fundación. Consulta con
+                admisiones su vigencia, la secuencia definitiva y las condiciones de desarrollo.
               </p>
               <div class="modules-list">
                 <!-- MÓDULO DESPLEGABLE. Título, explicación y temas de estudio. -->
@@ -1310,71 +1381,257 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
             <section class="course-block" id="perfil">
-              <span class="eyebrow">LO QUE PUEDES EXPLORAR</span>
-              <h2>Herramientas para seguir creciendo.</h2>
-              <p>El aprendizaje se conecta con tu experiencia y tu formación previa.</p>
-              <ul class="learning-list">
-                <li>
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="m7 12 3 3 7-7" /></svg
-                  ><span>Reconocer modelos y técnicas de comunicación de la PNL.</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="m7 12 3 3 7-7" /></svg
-                  ><span>Reflexionar sobre habilidades de escucha, negociación y liderazgo.</span>
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="m7 12 3 3 7-7" /></svg
-                  ><span
-                    >Evaluar críticamente las afirmaciones y actuar dentro de límites éticos y
-                    profesionales.</span
-                  >
-                </li>
-              </ul>
+              <div class="course-block-heading">
+                <div>
+                  <span class="eyebrow">PROYECCIÓN DE TU FORMACIÓN</span>
+                  <h2>Perfil del egresado</h2>
+                </div>
+                <span class="content-label">Basado en el PDF</span>
+              </div>
+              <p class="graduate-profile">
+                El documento describe un perfil de facilitador comunicacional con herramientas de
+                PNL aplicables a educación, organizaciones y desarrollo personal. La ficha conserva
+                una lectura crítica: la PNL no se presenta como psicoterapia ni como tratamiento de
+                salud validado.
+              </p>
+              <div class="competency-grid">
+                <article class="competency-card">
+                  <span class="competency-icon"
+                    ><svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 5c-4-3-9-2-9-2v16s5-1 9 2c4-3 9-2 9-2V3s-5-1-9 2Zm0 0v16M6 7h3m-3 4h3m6-4h3m-3 4h3"
+                      /></svg
+                  ></span>
+                  <h3>Saber conocer</h3>
+                  <ul class="check-list">
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Historia, presuposiciones y principios de la PNL.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Modelos de comunicación, rapport, anclajes y submodalidades.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Liderazgo, negociación, teoría del cambio y neurociencia del lenguaje.
+                    </li>
+                  </ul>
+                </article>
+                <article class="competency-card">
+                  <span class="competency-icon"
+                    ><svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="m2 10 4-5 5 1 3-1 4 1 4 5-4 7-5 3-7-4-4-7Zm7-3-2 4 2 2 4-3 6 5m-6-5 3 3m-7 5 2-2m1 4 2-2M2 10l4 2m12-3 4 2"
+                      /></svg
+                  ></span>
+                  <h3>Saber hacer</h3>
+                  <ul class="check-list">
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Analizar procesos de comunicación y relaciones interpersonales.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Aplicar técnicas de PNL en actividades educativas, organizacionales y de
+                      desarrollo personal.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Evaluar críticamente afirmaciones y actuar dentro de límites éticos y
+                      profesionales.
+                    </li>
+                  </ul>
+                </article>
+                <article class="competency-card">
+                  <span class="competency-icon"
+                    ><svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M20.5 5.5a5.5 5.5 0 0 0-8.5 1 5.5 5.5 0 0 0-8.5-1c-4.5 5 2 10 8.5 15 6.5-5 13-10 8.5-15Z"
+                      /></svg
+                  ></span>
+                  <h3>Saber ser</h3>
+                  <ul class="check-list">
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Empatía, escucha y comunicación respetuosa.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Responsabilidad sobre el alcance de las técnicas y de las promesas de cambio.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Pensamiento crítico frente a la evidencia y las afirmaciones de eficacia.
+                    </li>
+                  </ul>
+                </article>
+              </div>
               <div class="audience-card">
                 <h3>¿A quién está dirigido?</h3>
                 <p>
@@ -1382,11 +1639,83 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                   interpersonales.
                 </p>
               </div>
+              <aside class="information-note">
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M12 2 3 6v6c0 5 9 10 9 10s9-5 9-10V6l-9-4Z" />
+                  <path d="m8 12 3 3 5-6" />
+                </svg>
+                <p>
+                  La PNL no habilita para ejercer psicoterapia, diagnosticar ni tratar condiciones
+                  de salud. Su uso debe respetar la formación previa y los límites profesionales.
+                </p>
+              </aside>
               <p class="small-note">
                 Las competencias y las posibilidades de aplicación dependen del plan definitivo y de
-                tu habilitación profesional. No se garantizan empleos ni se otorga autorización para
-                ejercer actividades reguladas desde esta ficha.
+                tu formación y habilitación profesional. No se garantizan empleos ni se otorga
+                autorización para ejercer actividades reguladas desde esta ficha.
               </p>
+            </section>
+            <section class="course-block" id="salidas">
+              <span class="eyebrow">CAMPOS DE APLICACIÓN</span>
+              <h2>¿Dónde podrías aplicar lo aprendido?</h2>
+              <p>
+                El PDF plantea los siguientes ámbitos de aplicación. Su ejercicio concreto depende
+                de la titulación, la habilitación y las condiciones institucionales de cada caso.
+              </p>
+              <div class="career-grid">
+                <article class="career-card">
+                  <span class="career-number">01</span>
+                  <div>
+                    <h3>Comunicación y formación</h3>
+                    <p>
+                      Facilitar actividades de comunicación, liderazgo y habilidades interpersonales
+                      en contextos educativos u organizacionales.
+                    </p>
+                  </div>
+                </article>
+                <article class="career-card">
+                  <span class="career-number">02</span>
+                  <div>
+                    <h3>Desarrollo organizacional</h3>
+                    <p>
+                      Colaborar en procesos de equipo, negociación y gestión del cambio dentro de
+                      organizaciones.
+                    </p>
+                  </div>
+                </article>
+                <article class="career-card">
+                  <span class="career-number">03</span>
+                  <div>
+                    <h3>Desarrollo personal</h3>
+                    <p>
+                      Acompañar procesos de metas y aprendizaje desde un enfoque no clínico y ético.
+                    </p>
+                  </div>
+                </article>
+                <article class="career-card">
+                  <span class="career-number">04</span>
+                  <div>
+                    <h3>Investigación y divulgación crítica</h3>
+                    <p>
+                      Analizar modelos de PNL, sus aplicaciones y los límites de la evidencia
+                      disponible.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
             <section class="course-block" id="requisitos">
@@ -1430,59 +1759,6 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                   valores. Solicita las condiciones por escrito.
                 </p>
               </aside>
-            </section>
-            <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
-            <section class="course-block">
-              <span class="eyebrow">CONOCE NUESTRA COMUNIDAD</span>
-              <h2>Una ventana a UNIMANÁ</h2>
-              <!-- VIDEO OPCIONAL. Solo conecta con YouTube cuando la persona pulsa Reproducir. -->
-              <div class="video-card" data-video-card data-video="PT6zEhrBaI0">
-                <picture class=""
-                  ><source
-                    type="image/webp"
-                    srcset="
-                      ../assets/optimized/carousel-2021-400.webp   400w,
-                      ../assets/optimized/carousel-2021-800.webp   800w,
-                      ../assets/optimized/carousel-2021-1200.webp 1200w,
-                      ../assets/optimized/carousel-2021-1280.webp 1280w
-                    "
-                    sizes="(max-width: 760px) 94vw, 740px" />
-                  <img
-                    src="../imagenes/carousel/2021.jpg"
-                    width="1280"
-                    height="847"
-                    alt="Comunidad de Unimaná en una ceremonia de graduación"
-                    loading="lazy"
-                    decoding="async" /></picture
-                ><button type="button" class="video-play" data-play-video data-enhance-only>
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <path d="m8 4 12 8-12 8V4Z" /></svg
-                  ><span>Reproducir video institucional</span>
-                </button>
-              </div>
-              <p class="video-note">
-                Conservamos el video enlazado en la página original. Solo al reproducirlo se conecta
-                con YouTube.
-                <a
-                  href="https://www.youtube.com/watch?v=PT6zEhrBaI0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Ver directamente en YouTube</a
-                >.
-              </p>
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
             <section class="course-block course-scholarships" id="becas">
@@ -1592,6 +1868,45 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                   focusable="false"
                 >
                   <path d="M4 12h15M13 6l6 6-6 6" /></svg
+              ></a>
+            </section>
+            <!-- Fuente y alcance: distingue el PDF suministrado de la redacción orientativa. -->
+            <section class="course-block" id="fuente">
+              <span class="eyebrow">TRANSPARENCIA DE LA INFORMACIÓN</span>
+              <h2>Fuente y alcance</h2>
+              <p>
+                La descripción, el perfil, las competencias, las áreas de aplicación y la estructura
+                curricular de esta ficha se basan en el documento
+                <strong>cursos de la universidad.pdf</strong>, páginas 1–2, suministrado para esta
+                actualización. Las cifras de horas y meses son referenciales y deben confirmarse con
+                admisiones.
+              </p>
+              <p class="small-note">
+                La ficha resume y contextualiza el documento; no reproduce como hechos verificados
+                sus afirmaciones de aval, acreditación o eficacia. Consulta siempre las condiciones
+                oficiales vigentes.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.mediafire.com/file/o98wdwluqpibowc/cursos+de+la+universidad.pdf/file"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar el PDF suministrado
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M7 17 17 7M7 7h10v10" /></svg
               ></a>
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->

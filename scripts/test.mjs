@@ -101,7 +101,7 @@ await test('Inicio: imagen principal cargada y todas las fotos originales presen
   await go();
   await page.locator('.hero-photo img').evaluate((img) => img.decode());
   assert.ok(await page.locator('.hero-photo img').evaluate((img) => img.naturalWidth > 0));
-  assert.equal(await page.locator('.gallery-slide').count(), 22);
+  assert.equal(await page.locator('.gallery-slide').count(), 24);
   assert.equal(await page.locator('[data-program-card]').count(), 18);
 });
 await test('Filtros 5 / 5 / 3 / 5 / 18 y búsqueda sin tildes, vacío y restablecimiento', async () => {
@@ -234,7 +234,7 @@ await test('Olas: capa opaca coincide con sección destino en claro y oscuro', a
 });
 await test('Galería completa: todos los años, filtros y originales ampliables', async () => {
   await go('vistas/galeria.html');
-  assert.equal(await page.locator('.album-photo').count(), 22);
+  assert.equal(await page.locator('.album-photo').count(), 24);
   await page.locator('[data-year-filter="2025"]').click();
   assert.equal(await page.locator('.album-photo:visible').count(), 7);
   await page.locator('[data-year-filter="2016"]').click();
@@ -243,9 +243,9 @@ await test('Galería completa: todos los años, filtros y originales ampliables'
   assert.ok(await page.locator('#image-dialog').isVisible());
   await page.keyboard.press('Escape');
   await page.locator('[data-year-filter="todos"]').click();
-  assert.equal(await page.locator('.album-photo:visible').count(), 22);
+  assert.equal(await page.locator('.album-photo:visible').count(), 24);
 });
-await test('Programa: módulos, requisitos, video diferido y enlace de inscripción', async () => {
+await test('Programa: módulos, requisitos, video introductorio y enlace de inscripción', async () => {
   await go('vistas/PNL.html');
   assert.equal(await page.locator('iframe').count(), 0);
   assert.equal(await page.locator('.module').count(), 4);
@@ -256,19 +256,18 @@ await test('Programa: módulos, requisitos, video diferido y enlace de inscripci
   await page.keyboard.press('Enter');
   assert.ok(!(await module.evaluate((e) => e.open)));
   assert.equal(await page.locator('#requisitos').count(), 1);
-  await page.route('https://www.youtube-nocookie.com/**', (route) =>
-    route.fulfill({
-      contentType: 'text/html',
-      body: '<!doctype html><html lang="es"><title>Simulación de proveedor en prueba</title><p>Inserción comprobada sin acceder al proveedor.</p></html>',
-    }),
-  );
-  await page.locator('[data-play-video]').click();
-  assert.equal(await page.locator('iframe').count(), 1);
+  assert.equal(await page.locator('#perfil .competency-card').count(), 3);
+  assert.equal(await page.locator('#salidas .career-card').count(), 4);
+  assert.match(await page.locator('#perfil').innerText(), /Perfil del egresado/);
+  assert.match(await page.locator('#fuente').innerText(), /cursos de la universidad\.pdf/);
+  assert.equal(await page.locator('#video').count(), 1);
+  assert.equal(await page.locator('#video .video-placeholder').count(), 1);
+  assert.equal(await page.locator('#video iframe').count(), 0);
+  assert.match(await page.locator('#video').innerText(), /Video introductorio próximamente/);
   assert.match(
-    await page.locator('iframe').getAttribute('src'),
-    /youtube-nocookie.com\/embed\/PT6zEhrBaI0/,
+    await page.locator('#video .video-legacy-note a').getAttribute('href'),
+    /youtube\.com\/watch\?v=PT6zEhrBaI0/,
   );
-  await page.unroute('https://www.youtube-nocookie.com/**');
   await page.locator('.course-hero .button-primary').click();
   assert.match(page.url(), /inscripcion.html\?programa=pnl/);
   assert.equal(await page.locator('[name="programa"]').inputValue(), 'pnl');
@@ -765,9 +764,9 @@ await test('Los títulos principales conservan sus tamaños anteriores y la fuen
     [
       'vistas/PNL.html',
       [
-        [1440, [27, 57, 29, 29, 29, 29, 29, 26, 29, 29, 26, 33]],
-        [390, [null, 36, 27, 27, 27, 27, 27, 25, 27, 27, 30, 34]],
-        [320, [null, 33, 27, 27, 27, 27, 27, 25, 27, 27, 30, 31]],
+        [1440, [27, 57, 29, 29, 29, 29, 29, 29, 26, 29, 29, 29, 26, 33]],
+        [390, [null, 36, 27, 27, 27, 27, 27, 27, 25, 27, 27, 27, 30, 34]],
+        [320, [null, 33, 27, 27, 27, 27, 27, 27, 25, 27, 27, 27, 30, 31]],
       ],
     ],
     [

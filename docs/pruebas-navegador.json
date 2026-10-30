@@ -1,7 +1,7 @@
 {
   "environment": "Chromium / Playwright",
   "url": "http://127.0.0.1:3000",
-  "testDate": "2026-09-08",
+  "testDate": "2026-10-30",
   "tests": [
     {
       "name": "Todos los HTML: cargan, un H1, sin desbordamiento a 1440 / 390 / 320 px",
@@ -44,7 +44,7 @@
       "passed": true
     },
     {
-      "name": "Programa: módulos, requisitos, video diferido y enlace de inscripción",
+      "name": "Programa: módulos, requisitos, video introductorio y enlace de inscripción",
       "passed": true
     },
     {

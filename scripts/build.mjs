@@ -611,12 +611,131 @@ await write(
     cls: 'home-page',
   }),
 );
+// Acepta un ID de YouTube o enlaces comunes (watch, youtu.be, shorts, embed, live).
+// Devuelve null si el valor está vacío o no es válido; la ficha mostrará el aviso.
+function youtubeId(value) {
+  if (!value) return null;
+  const raw = String(value).trim();
+  if (/^[a-zA-Z0-9_-]{11}$/.test(raw)) return raw;
+  try {
+    const url = new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`);
+    const host = url.hostname.replace(/^www\./, '').replace(/^m\./, '');
+    const candidates = [];
+    if (host === 'youtu.be') candidates.push(url.pathname.split('/').filter(Boolean)[0]);
+    if (host === 'youtube.com' || host === 'youtube-nocookie.com') {
+      candidates.push(url.searchParams.get('v'));
+      const parts = url.pathname.split('/').filter(Boolean);
+      if (['embed', 'shorts', 'live', 'v'].includes(parts[0])) candidates.push(parts[1]);
+    }
+    return candidates.find((id) => /^[a-zA-Z0-9_-]{11}$/.test(id || '')) || null;
+  } catch {
+    return null;
+  }
+}
 // FICHAS DE PROGRAMAS. Reutiliza los mismos bloques con los datos de cada programa.
 // Para cambiar textos, módulos o duración, edita data/programas.mjs.
 function programPage(p, canonicalFile = p.file) {
   const b = '../';
   const cat = categories.find((c) => c.id === p.category);
   const apply = `inscripcion.html?programa=${p.id}#solicitud`;
+  // Video introductorio: acepta un ID o enlace de YouTube en data/programas.mjs.
+  // Si todavía no hay video propio, el área muestra el aviso «próximamente».
+  const videoId = youtubeId(p.introVideo);
+  const videoTitle = p.introVideoTitle || `Video introductorio de ${p.name}`;
+  if (p.introVideo && !videoId)
+    console.warn(`Aviso: el video introductorio de ${p.id} no es un enlace/ID de YouTube válido.`);
+  const legacyVideoId = youtubeId(p.video);
+  const videoBlock = videoId
+    ? /* HTML */ `<!-- VIDEO INTRODUCTORIO. Solo conecta con YouTube cuando la persona pulsa Reproducir. -->
+        <div
+          class="video-card"
+          data-video-card
+          data-video="${videoId}"
+          data-video-title="${escape(videoTitle)}"
+        >
+          ${picture('carousel/2021.jpg', '../', {
+            alt: 'Comunidad de Unimaná en una ceremonia de graduación',
+            sizes: '(max-width: 760px) 94vw, 740px',
+          })}<button type="button" class="video-play" data-play-video data-enhance-only>
+            ${icon('play')}<span>Reproducir video introductorio</span>
+          </button>
+        </div>
+        <p class="video-note">
+          Video introductorio del programa. Solo al reproducirlo se conecta con YouTube.
+          <a
+            href="https://www.youtube.com/watch?v=${videoId}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver directamente en YouTube</a
+          >.
+        </p>`
+    : /* HTML */ `<!-- AVISO DE VIDEO. El espacio queda listo para publicar el video introductorio. -->
+        <div class="video-placeholder" role="note" aria-label="Video introductorio próximamente">
+          <span class="video-placeholder-icon">${icon('play')}</span>
+          <h3>Video introductorio próximamente</h3>
+          <p>
+            Estamos preparando este espacio para presentar el programa. Mientras tanto, puedes
+            revisar el plan de estudio o solicitar información a admisiones.
+          </p>
+          <a class="text-link" href="${apply}">Solicitar información ${icon('arrow')}</a>
+          ${legacyVideoId
+            ? /* HTML */ `<p class="video-legacy-note">
+                También puedes ver el
+                <a
+                  href="https://www.youtube.com/watch?v=${legacyVideoId}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >video institucional de UNIMANÁ</a
+                >.
+              </p>`
+            : ''}
+        </div>`;
+  // La fuente distingue el PDF suministrado de la redacción editorial orientativa.
+  const fromPdf = p.source?.kind === 'pdf';
+  const sourcePages = fromPdf
+    ? p.source.pages.length > 1
+      ? `${p.source.pages[0]}–${p.source.pages[p.source.pages.length - 1]}`
+      : `${p.source.pages[0]}`
+    : '';
+  const moduleTitle = fromPdf
+    ? 'Estructura curricular'
+    : p.original
+      ? 'Módulos del programa'
+      : 'Ejes de estudio';
+  const moduleLabel = fromPdf
+    ? 'Según PDF suministrado'
+    : p.original
+      ? 'Contenido publicado'
+      : 'Contenido orientativo';
+  const moduleIntro = fromPdf
+    ? 'La estructura siguiente resume el PDF suministrado por la fundación. Consulta con admisiones su vigencia, la secuencia definitiva y las condiciones de desarrollo.'
+    : p.original
+      ? 'Conservamos los módulos publicados en el sitio institucional. Consulta con admisiones su vigencia y las condiciones de desarrollo.'
+      : 'Estos ejes ofrecen una introducción al área. Son una propuesta informativa para esta ficha, no un plan de estudios aprobado. La fundación debe confirmar su estructura definitiva.';
+  const competencies = p.competencies
+    .map(
+      (c) =>
+        /* HTML */ `<article class="competency-card">
+          <span class="competency-icon">${icon(c.icon)}</span>
+          <h3>${escape(c.title)}</h3>
+          <ul class="check-list">
+            ${c.items.map((t) => /* HTML */ `<li>${icon('check')}${escape(t)}</li>`).join('')}
+          </ul>
+        </article>`,
+    )
+    .join('');
+  const careerAreas = p.careerAreas
+    .map(
+      (a, i) =>
+        /* HTML */ `<article class="career-card">
+          <span class="career-number">${String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <h3>${escape(a.title)}</h3>
+            <p>${escape(a.description)}</p>
+          </div>
+        </article>`,
+    )
+    .join('');
   const modules = p.modules
     .map(
       (m, i) =>
@@ -653,7 +772,7 @@ function programPage(p, canonicalFile = p.file) {
             <div class="hero-buttons">
               <a class="button button-primary" href="${apply}"
                 >Solicita información ${icon('arrow')}</a
-              ><a class="text-link" href="#modulos">Explora el contenido ${icon('chevron')}</a>
+              ><a class="text-link" href="#perfil">Perfil del egresado ${icon('chevron')}</a>
             </div>
           </div>
           <div class="course-hero-art" aria-hidden="true">
@@ -688,9 +807,10 @@ function programPage(p, canonicalFile = p.file) {
       <p class="facts-note">${escape(p.durationNote)}</p>
       <!-- Enlaces para ir directamente a las secciones de esta ficha. -->
       <nav class="course-nav" aria-label="Secciones del programa">
-        <a href="#descripcion">Descripción</a><a href="#modulos">Plan de estudio</a
-        ><a href="#perfil">Tu aprendizaje</a><a href="#requisitos">Requisitos</a
-        ><a href="#becas">Becas</a><a href="#comunidad">Comunidad</a>
+        <a href="#descripcion">Descripción</a><a href="#video">Video introductorio</a
+        ><a href="#modulos">Plan de estudio</a><a href="#perfil">Perfil del egresado</a
+        ><a href="#salidas">Áreas de aplicación</a><a href="#requisitos">Requisitos</a
+        ><a href="#becas">Becas</a><a href="#comunidad">Comunidad</a><a href="#fuente">Fuente</a>
       </nav>
       <div class="course-layout">
         <!-- Contenido completo del programa, tomado de data/programas.mjs. -->
@@ -707,6 +827,10 @@ function programPage(p, canonicalFile = p.file) {
                 <p>${escape(p.objective)}</p>
               </div>
             </div>
+            <div class="approach-note">
+              <h3>Enfoque del programa</h3>
+              <p>${escape(p.approach)}</p>
+            </div>
             ${p.notice
               ? /* HTML */ `<!-- Aclaración importante sobre el alcance de la información publicada. -->
                   <aside class="information-note">
@@ -715,43 +839,60 @@ function programPage(p, canonicalFile = p.file) {
                   </aside>`
               : ''}
           </section>
+          <!-- Video introductorio: se configura en data/programas.mjs con introVideo. -->
+          <section class="course-block" id="video">
+            <span class="eyebrow">CONOCE EL PROGRAMA</span>
+            <h2>Video introductorio</h2>
+            ${videoBlock}
+          </section>
           <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
           <section class="course-block" id="modulos">
             <div class="course-block-heading">
               <div>
                 <span class="eyebrow">PASO A PASO</span>
-                <h2>${p.original ? 'Módulos del programa' : 'Ejes de estudio'}</h2>
+                <h2>${moduleTitle}</h2>
               </div>
-              <span class="content-label"
-                >${p.original ? 'Contenido publicado' : 'Contenido orientativo'}</span
-              >
+              <span class="content-label">${moduleLabel}</span>
             </div>
-            <p>
-              ${p.original
-                ? 'Conservamos los módulos publicados en el sitio institucional. Consulta con admisiones su vigencia y las condiciones de desarrollo.'
-                : 'Estos ejes ofrecen una introducción al área. Son una propuesta informativa para esta ficha, no un plan de estudios aprobado. La fundación debe confirmar su estructura definitiva.'}
-            </p>
+            <p>${moduleIntro}</p>
             <div class="modules-list">${modules}</div>
           </section>
           <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
           <section class="course-block" id="perfil">
-            <span class="eyebrow">LO QUE PUEDES EXPLORAR</span>
-            <h2>Herramientas para seguir creciendo.</h2>
-            <p>El aprendizaje se conecta con tu experiencia y tu formación previa.</p>
-            <ul class="learning-list">
-              ${p.profile
-                .map((t) => /* HTML */ `<li>${icon('check-circle')}<span>${escape(t)}</span></li>`)
-                .join('')}
-            </ul>
+            <div class="course-block-heading">
+              <div>
+                <span class="eyebrow">PROYECCIÓN DE TU FORMACIÓN</span>
+                <h2>Perfil del egresado</h2>
+              </div>
+              <span class="content-label"
+                >${fromPdf ? 'Basado en el PDF' : 'Perfil orientativo'}</span
+              >
+            </div>
+            <p class="graduate-profile">${escape(p.graduateProfile)}</p>
+            <div class="competency-grid">${competencies}</div>
             <div class="audience-card">
               <h3>¿A quién está dirigido?</h3>
               <p>${escape(p.audience)}</p>
             </div>
+            <aside class="information-note">
+              ${icon('shield')}
+              <p>${escape(p.scopeNote)}</p>
+            </aside>
             <p class="small-note">
               Las competencias y las posibilidades de aplicación dependen del plan definitivo y de
-              tu habilitación profesional. No se garantizan empleos ni se otorga autorización para
-              ejercer actividades reguladas desde esta ficha.
+              tu formación y habilitación profesional. No se garantizan empleos ni se otorga
+              autorización para ejercer actividades reguladas desde esta ficha.
             </p>
+          </section>
+          <section class="course-block" id="salidas">
+            <span class="eyebrow">CAMPOS DE APLICACIÓN</span>
+            <h2>¿Dónde podrías aplicar lo aprendido?</h2>
+            <p>
+              ${fromPdf
+                ? 'El PDF plantea los siguientes ámbitos de aplicación. Su ejercicio concreto depende de la titulación, la habilitación y las condiciones institucionales de cada caso.'
+                : 'Estos ámbitos son una orientación editorial acorde con el área de estudio. No constituyen una promesa de empleo ni sustituyen los requisitos legales de cada profesión.'}
+            </p>
+            <div class="career-grid">${careerAreas}</div>
           </section>
           <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
           <section class="course-block" id="requisitos">
@@ -770,32 +911,6 @@ function programPage(p, canonicalFile = p.file) {
               </p>
             </aside>
           </section>
-          ${p.video
-            ? /* HTML */ `<!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
-                <section class="course-block">
-                  <span class="eyebrow">CONOCE NUESTRA COMUNIDAD</span>
-                  <h2>Una ventana a UNIMANÁ</h2>
-                  <!-- VIDEO OPCIONAL. Solo conecta con YouTube cuando la persona pulsa Reproducir. -->
-                  <div class="video-card" data-video-card data-video="${p.video}">
-                    ${picture('carousel/2021.jpg', '../', {
-                      alt: 'Comunidad de Unimaná en una ceremonia de graduación',
-                      sizes: '(max-width: 760px) 94vw, 740px',
-                    })}<button type="button" class="video-play" data-play-video data-enhance-only>
-                      ${icon('play')}<span>Reproducir video institucional</span>
-                    </button>
-                  </div>
-                  <p class="video-note">
-                    Conservamos el video enlazado en la página original. Solo al reproducirlo se
-                    conecta con YouTube.
-                    <a
-                      href="https://www.youtube.com/watch?v=${p.video}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Ver directamente en YouTube</a
-                    >.
-                  </p>
-                </section>`
-            : ''}
           <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
           <section class="course-block course-scholarships" id="becas">
             <span class="eyebrow">UN CAMINO MÁS ACCESIBLE</span>
@@ -845,6 +960,45 @@ function programPage(p, canonicalFile = p.file) {
               </figure>
             </div>
             <a class="text-link" href="galeria.html">Conoce nuestra experiencia ${icon('arrow')}</a>
+          </section>
+          <!-- Fuente y alcance: distingue el PDF suministrado de la redacción orientativa. -->
+          <section class="course-block" id="fuente">
+            <span class="eyebrow">TRANSPARENCIA DE LA INFORMACIÓN</span>
+            <h2>Fuente y alcance</h2>
+            ${fromPdf
+              ? /* HTML */ `<p>
+                    La descripción, el perfil, las competencias, las áreas de aplicación y la
+                    estructura curricular de esta ficha se basan en el documento
+                    <strong>cursos de la universidad.pdf</strong>, páginas ${sourcePages},
+                    suministrado para esta actualización. Las cifras de horas y meses son
+                    referenciales y deben confirmarse con admisiones.
+                  </p>
+                  <p class="small-note">
+                    La ficha resume y contextualiza el documento; no reproduce como hechos
+                    verificados sus afirmaciones de aval, acreditación o eficacia. Consulta siempre
+                    las condiciones oficiales vigentes.
+                  </p>
+                  <a
+                    class="text-link"
+                    href="${escape(p.source.url)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Consultar el PDF suministrado ${icon('external')}</a
+                  >`
+              : /* HTML */ `<p>
+                    Este programa no aparece en el PDF suministrado. Su perfil del egresado,
+                    competencias, áreas de aplicación y enfoque son
+                    <strong>redacción editorial orientativa</strong>, elaborada de forma acorde con
+                    el nombre y el área de estudio del catálogo institucional.
+                  </p>
+                  <p class="small-note">
+                    No equivalen a un plan de estudios aprobado ni a una certificación oficial. La
+                    fundación debe validarlos antes de usarlos como información académica
+                    definitiva.
+                  </p>
+                  <a class="text-link" href="inscripcion.html?programa=${p.id}#solicitud"
+                    >Solicitar información oficial ${icon('arrow')}</a
+                  >`}
           </section>
           <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
           <section class="course-block">
@@ -1374,7 +1528,7 @@ const searchIndex = [
   ...programs.map((p) => ({
     title: p.name,
     label: categories.find((c) => c.id === p.category).name,
-    description: p.summary,
+    description: `${p.summary} Perfil del egresado, competencias y áreas de aplicación.`,
     url: 'vistas/' + p.file,
   })),
   {

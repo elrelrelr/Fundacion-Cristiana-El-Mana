@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- PÁGINA GENERADA. Cambia el contenido en scripts/build.mjs y las piezas comunes en scripts/templates.mjs.
 Para colores y letras usa style.css; para acciones usa index.js. Ejecuta npm run build al terminar.
 Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de plantillas. -->
@@ -754,8 +754,8 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                     focusable="false"
                   >
                     <path d="M4 12h15M13 6l6 6-6 6" /></svg></a
-                ><a class="text-link" href="#modulos"
-                  >Explora el contenido
+                ><a class="text-link" href="#perfil"
+                  >Perfil del egresado
                   <svg
                     class="icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -914,9 +914,10 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
         </p>
         <!-- Enlaces para ir directamente a las secciones de esta ficha. -->
         <nav class="course-nav" aria-label="Secciones del programa">
-          <a href="#descripcion">Descripción</a><a href="#modulos">Plan de estudio</a
-          ><a href="#perfil">Tu aprendizaje</a><a href="#requisitos">Requisitos</a
-          ><a href="#becas">Becas</a><a href="#comunidad">Comunidad</a>
+          <a href="#descripcion">Descripción</a><a href="#video">Video introductorio</a
+          ><a href="#modulos">Plan de estudio</a><a href="#perfil">Perfil del egresado</a
+          ><a href="#salidas">Áreas de aplicación</a><a href="#requisitos">Requisitos</a
+          ><a href="#becas">Becas</a><a href="#comunidad">Comunidad</a><a href="#fuente">Fuente</a>
         </nav>
         <div class="course-layout">
           <!-- Contenido completo del programa, tomado de data/programas.mjs. -->
@@ -959,6 +960,67 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                     evaluar experiencias de aprendizaje contextualizadas.
                   </p>
                 </div>
+              </div>
+              <div class="approach-note">
+                <h3>Enfoque del programa</h3>
+                <p>
+                  La propuesta conecta la reflexión pedagógica con el análisis de contextos reales.
+                  Prioriza la planeación, la evaluación formativa y la construcción de entornos de
+                  aprendizaje respetuosos, sin presentar estos ejes como una malla curricular
+                  aprobada.
+                </p>
+              </div>
+            </section>
+            <!-- Video introductorio: se configura en data/programas.mjs con introVideo. -->
+            <section class="course-block" id="video">
+              <span class="eyebrow">CONOCE EL PROGRAMA</span>
+              <h2>Video introductorio</h2>
+              <!-- AVISO DE VIDEO. El espacio queda listo para publicar el video introductorio. -->
+              <div
+                class="video-placeholder"
+                role="note"
+                aria-label="Video introductorio próximamente"
+              >
+                <span class="video-placeholder-icon"
+                  ><svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="m8 4 12 8-12 8V4Z" /></svg
+                ></span>
+                <h3>Video introductorio próximamente</h3>
+                <p>
+                  Estamos preparando este espacio para presentar el programa. Mientras tanto, puedes
+                  revisar el plan de estudio o solicitar información a admisiones.
+                </p>
+                <a class="text-link" href="inscripcion.html?programa=pedagogia#solicitud"
+                  >Solicitar información
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M4 12h15M13 6l6 6-6 6" /></svg
+                ></a>
               </div>
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
@@ -1316,76 +1378,255 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
             <section class="course-block" id="perfil">
-              <span class="eyebrow">LO QUE PUEDES EXPLORAR</span>
-              <h2>Herramientas para seguir creciendo.</h2>
-              <p>El aprendizaje se conecta con tu experiencia y tu formación previa.</p>
-              <ul class="learning-list">
-                <li>
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="m7 12 3 3 7-7" /></svg
-                  ><span
-                    >Analizar situaciones educativas desde diferentes enfoques pedagógicos.</span
-                  >
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="m7 12 3 3 7-7" /></svg
-                  ><span
-                    >Diseñar propuestas didácticas que reconozcan la diversidad de quienes
-                    aprenden.</span
-                  >
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="m7 12 3 3 7-7" /></svg
-                  ><span
-                    >Participar en proyectos de acompañamiento educativo y trabajo
-                    comunitario.</span
-                  >
-                </li>
-              </ul>
+              <div class="course-block-heading">
+                <div>
+                  <span class="eyebrow">PROYECCIÓN DE TU FORMACIÓN</span>
+                  <h2>Perfil del egresado</h2>
+                </div>
+                <span class="content-label">Perfil orientativo</span>
+              </div>
+              <p class="graduate-profile">
+                El perfil orientativo se centra en comprender cómo aprenden las personas y en
+                diseñar experiencias educativas pertinentes, inclusivas y evaluables. La formación
+                propuesta busca articular reflexión pedagógica, didáctica y trabajo con la
+                comunidad.
+              </p>
+              <div class="competency-grid">
+                <article class="competency-card">
+                  <span class="competency-icon"
+                    ><svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 5c-4-3-9-2-9-2v16s5-1 9 2c4-3 9-2 9-2V3s-5-1-9 2Zm0 0v16M6 7h3m-3 4h3m6-4h3m-3 4h3"
+                      /></svg
+                  ></span>
+                  <h3>Saber conocer</h3>
+                  <ul class="check-list">
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Teorías del aprendizaje y del desarrollo humano.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Fundamentos de currículo, didáctica y evaluación formativa.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Educación, cultura, diversidad e inclusión.
+                    </li>
+                  </ul>
+                </article>
+                <article class="competency-card">
+                  <span class="competency-icon"
+                    ><svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="m2 10 4-5 5 1 3-1 4 1 4 5-4 7-5 3-7-4-4-7Zm7-3-2 4 2 2 4-3 6 5m-6-5 3 3m-7 5 2-2m1 4 2-2M2 10l4 2m12-3 4 2"
+                      /></svg
+                  ></span>
+                  <h3>Saber hacer</h3>
+                  <ul class="check-list">
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Diseñar secuencias y recursos de aprendizaje contextualizados.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Observar y analizar situaciones educativas para proponer mejoras.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Acompañar procesos de aprendizaje y trabajar con familias y comunidad.
+                    </li>
+                  </ul>
+                </article>
+                <article class="competency-card">
+                  <span class="competency-icon"
+                    ><svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M20.5 5.5a5.5 5.5 0 0 0-8.5 1 5.5 5.5 0 0 0-8.5-1c-4.5 5 2 10 8.5 15 6.5-5 13-10 8.5-15Z"
+                      /></svg
+                  ></span>
+                  <h3>Saber ser</h3>
+                  <ul class="check-list">
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Vocación de servicio y escucha activa.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Respeto por la diversidad y compromiso con la equidad.
+                    </li>
+                    <li>
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="m5 12 4 4L19 6" /></svg
+                      >Reflexión crítica y apertura a la innovación responsable.
+                    </li>
+                  </ul>
+                </article>
+              </div>
               <div class="audience-card">
                 <h3>¿A quién está dirigido?</h3>
                 <p>
@@ -1393,11 +1634,84 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                   aprendizaje.
                 </p>
               </div>
+              <aside class="information-note">
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M12 2 3 6v6c0 5 9 10 9 10s9-5 9-10V6l-9-4Z" />
+                  <path d="m8 12 3 3 5-6" />
+                </svg>
+                <p>
+                  Las funciones docentes y la denominación del título dependen del plan definitivo,
+                  la normativa vigente y la certificación que confirme la fundación.
+                </p>
+              </aside>
               <p class="small-note">
                 Las competencias y las posibilidades de aplicación dependen del plan definitivo y de
-                tu habilitación profesional. No se garantizan empleos ni se otorga autorización para
-                ejercer actividades reguladas desde esta ficha.
+                tu formación y habilitación profesional. No se garantizan empleos ni se otorga
+                autorización para ejercer actividades reguladas desde esta ficha.
               </p>
+            </section>
+            <section class="course-block" id="salidas">
+              <span class="eyebrow">CAMPOS DE APLICACIÓN</span>
+              <h2>¿Dónde podrías aplicar lo aprendido?</h2>
+              <p>
+                Estos ámbitos son una orientación editorial acorde con el área de estudio. No
+                constituyen una promesa de empleo ni sustituyen los requisitos legales de cada
+                profesión.
+              </p>
+              <div class="career-grid">
+                <article class="career-card">
+                  <span class="career-number">01</span>
+                  <div>
+                    <h3>Proyectos pedagógicos</h3>
+                    <p>
+                      Participar en el diseño y acompañamiento de experiencias de aprendizaje en
+                      contextos formales o no formales, según la normativa aplicable.
+                    </p>
+                  </div>
+                </article>
+                <article class="career-card">
+                  <span class="career-number">02</span>
+                  <div>
+                    <h3>Diseño de recursos educativos</h3>
+                    <p>
+                      Crear materiales, secuencias didácticas y propuestas de evaluación formativa.
+                    </p>
+                  </div>
+                </article>
+                <article class="career-card">
+                  <span class="career-number">03</span>
+                  <div>
+                    <h3>Trabajo comunitario</h3>
+                    <p>
+                      Colaborar con iniciativas de acompañamiento educativo, lectura, familias y
+                      participación social.
+                    </p>
+                  </div>
+                </article>
+                <article class="career-card">
+                  <span class="career-number">04</span>
+                  <div>
+                    <h3>Investigación e innovación</h3>
+                    <p>
+                      Sistematizar prácticas y proponer mejoras basadas en la observación y la
+                      evidencia.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </section>
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
             <section class="course-block" id="requisitos">
@@ -1442,7 +1756,6 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
                 </p>
               </aside>
             </section>
-
             <!-- Información de la ficha. El título de este bloque indica el tema que puedes editar. -->
             <section class="course-block course-scholarships" id="becas">
               <span class="eyebrow">UN CAMINO MÁS ACCESIBLE</span>
@@ -1536,6 +1849,39 @@ Guía sencilla: docs/GUIA-EDICION.md. Este HTML ya funciona sin un servidor de p
               </div>
               <a class="text-link" href="galeria.html"
                 >Conoce nuestra experiencia
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M4 12h15M13 6l6 6-6 6" /></svg
+              ></a>
+            </section>
+            <!-- Fuente y alcance: distingue el PDF suministrado de la redacción orientativa. -->
+            <section class="course-block" id="fuente">
+              <span class="eyebrow">TRANSPARENCIA DE LA INFORMACIÓN</span>
+              <h2>Fuente y alcance</h2>
+              <p>
+                Este programa no aparece en el PDF suministrado. Su perfil del egresado,
+                competencias, áreas de aplicación y enfoque son
+                <strong>redacción editorial orientativa</strong>, elaborada de forma acorde con el
+                nombre y el área de estudio del catálogo institucional.
+              </p>
+              <p class="small-note">
+                No equivalen a un plan de estudios aprobado ni a una certificación oficial. La
+                fundación debe validarlos antes de usarlos como información académica definitiva.
+              </p>
+              <a class="text-link" href="inscripcion.html?programa=pedagogia#solicitud"
+                >Solicitar información oficial
                 <svg
                   class="icon"
                   xmlns="http://www.w3.org/2000/svg"

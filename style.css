@@ -3279,6 +3279,106 @@ textarea {
   font-weight: 650;
 }
 
+/* Perfil del egresado: resumen, competencias y áreas de aplicación. */
+.graduate-profile {
+  font-size: var(--type-lead);
+  color: var(--text);
+  line-height: 1.9;
+}
+.approach-note {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--surface);
+}
+.approach-note h3 {
+  margin-bottom: 9px;
+}
+.approach-note p {
+  margin: 0;
+  color: var(--muted);
+}
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+.competency-card {
+  min-width: 0;
+  padding: 22px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--soft);
+}
+.competency-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-radius: 11px;
+  background: var(--surface);
+  color: var(--primary-ink);
+  border: 1px solid var(--border);
+}
+.competency-icon .icon {
+  width: 22px;
+  height: 22px;
+}
+.competency-card h3 {
+  margin-bottom: 14px;
+}
+.competency-card .check-list {
+  gap: 12px;
+}
+.competency-card .check-list li {
+  font-size: var(--type-copy);
+  line-height: 1.75;
+}
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 25px;
+}
+.career-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  min-width: 0;
+  padding: 22px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.career-number {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--primary-soft);
+  color: var(--primary-ink);
+  font-family: var(--heading);
+  font-size: var(--type-small);
+  font-weight: 750;
+}
+.career-card h3 {
+  margin-bottom: 8px;
+}
+.career-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--type-copy);
+  line-height: 1.8;
+}
+#fuente .text-link {
+  margin-top: 14px;
+}
+
 /* Panel de orientación que acompaña la lectura en pantallas amplias. */
 .course-sidebar {
   align-self: start;
@@ -3415,6 +3515,57 @@ textarea {
   margin: 14px 0 0;
 }
 .video-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+/* Espacio reservado para el video introductorio cuando todavía no hay enlace publicado. */
+.video-placeholder {
+  margin-top: 22px;
+  min-height: 280px;
+  padding: 48px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  border: 1px dashed var(--input-border);
+  border-radius: 14px;
+  background: var(--soft);
+}
+.video-placeholder-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--primary-ink);
+}
+.video-placeholder-icon .icon {
+  width: 28px;
+  height: 28px;
+}
+.video-placeholder h3 {
+  margin: 0;
+  font-size: var(--type-subtitle);
+}
+.video-placeholder p {
+  max-width: 560px;
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--type-copy);
+  line-height: 1.8;
+}
+.video-placeholder .text-link {
+  margin-top: 4px;
+}
+.video-legacy-note {
+  font-size: var(--type-small);
+  color: var(--subtle);
+}
+.video-legacy-note a {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -6617,6 +6768,14 @@ textarea {
   }
   .video-play > span {
     font-size: var(--type-small);
+  }
+  .video-placeholder {
+    min-height: 240px;
+    padding: 32px 18px;
+  }
+  .video-placeholder-icon {
+    width: 56px;
+    height: 56px;
   }
   .course-block .faq-list summary {
     font-size: var(--type-small);

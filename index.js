@@ -653,7 +653,7 @@
       if (!/^[a-zA-Z0-9_-]{11}$/.test(card.dataset.video)) return;
       const iframe = document.createElement('iframe');
       iframe.src = `https://www.youtube-nocookie.com/embed/${card.dataset.video}?rel=0&autoplay=1`;
-      iframe.title = 'Video institucional de la Fundación Cristiana El Maná · UNIMANÁ';
+      iframe.title = card.dataset.videoTitle || 'Video de la Fundación Cristiana El Maná · UNIMANÁ';
       iframe.width = '560';
       iframe.height = '315';
       iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
@@ -908,19 +908,20 @@
   if (coinImg && coinPicture) {
     const month = new Date().getMonth(); // 0 = Enero, 6 = Julio, 11 = Diciembre
     let newSrc = '';
-    
+
     if (month === 0) {
       newSrc = base + 'imagenes/logo_gafas.png';
     } else if (month === 6) {
       newSrc = base + 'imagenes/logo_colombiano.png';
-    } else if (month === 8) { // Septiembre
+    } else if (month === 8) {
+      // Septiembre
       newSrc = base + 'imagenes/logo_amoryamistad.jpg';
     } else if (month === 11) {
       newSrc = base + 'imagenes/logo_navideño.png';
     }
-    
+
     if (newSrc) {
-      coinPicture.querySelectorAll('source').forEach(s => s.remove());
+      coinPicture.querySelectorAll('source').forEach((s) => s.remove());
       coinImg.src = newSrc;
       coinImg.style.backgroundColor = '#005bb5'; // Azul de fondo
       coinImg.style.borderRadius = '50%'; // Fondo redondeado

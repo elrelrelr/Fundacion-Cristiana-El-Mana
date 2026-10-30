@@ -65,7 +65,6 @@ La base exacta permanece en el historial Git (`414e3a91c88d486da328dd0fd19f6e142
 
 La comprobación en Chromium valida el protocolo local utilizado en el aviso reportado; no se afirma haber ejecutado Brave para Windows. Para probar condiciones equivalentes a producción y contenidos de proveedores externos, sigue siendo recomendable HTTP/HTTPS mediante Live Server o `npm start`.
 
-
 ## Cuarta revisión: comentarios en español y texto más legible
 
 1. Se organizaron y comentaron los archivos de HTML, CSS, JavaScript, datos editables y herramientas. Las funciones y los bloques principales tienen explicaciones sencillas. Los 26 HTML se generan con comentarios y sangría, sin perderlos al reconstruir el sitio.
@@ -77,6 +76,16 @@ La comprobación en Chromium valida el protocolo local utilizado en el aviso rep
 7. Resultado: **31/31 pruebas correctas**, **22 auditorías automáticas de accesibilidad sin infracciones detectadas**, y auditoría estática sin errores de los **26 HTML comentados**, los **2.255 enlaces/anclas**, los **1.006 recursos locales** y las **220 imágenes con medidas**. Se compararon los títulos antes y después y se agregaron pruebas permanentes de tamaño y espacio para los textos ampliados.
 8. Se mantiene una sola entrega ZIP actual. No se agregaron estadísticas, servicios de registro, envío de formularios, ofertas académicas ni enlaces sociales nuevos. La revisión de archivos no implica publicación en GitHub o en el dominio.
 
+## Quinta revisión: perfiles del egresado y PDF de cursos
+
+1. Se amplió la información de las **18 fichas de programa** con perfil del egresado, competencias (`Saber conocer`, `Saber hacer`, `Saber ser`), cuatro áreas de aplicación, enfoque del programa, nota de alcance profesional y sección de fuente.
+2. Cinco fichas se basan en el PDF `cursos de la universidad.pdf` suministrado por el propietario: PNL, Gerontología, Sexología y Terapia Sexual, Psiconeuroinmunología e Inclusión Educativa y Neurodiversidad. Cada una cita sus páginas de referencia y enlaza el documento original.
+3. Las otras 13 fichas recibieron redacción editorial orientativa acorde con su área de estudio. Se identifica expresamente que no aparecen en el PDF y que no equivalen a un plan aprobado ni a una habilitación profesional.
+4. La ficha de Inclusión Educativa y Neurodiversidad ahora muestra los cuatro niveles y los 12 módulos de 20 horas descritos en el PDF. Se ajustaron notas de duración de las cinco fichas basadas en el documento.
+5. Se conservaron diseño, rutas, modo oscuro, búsqueda, formularios locales, galería y demás funciones. La búsqueda local incluye ahora referencias al perfil del egresado, competencias y áreas de aplicación.
+6. Se añadieron estilos responsivos para las nuevas tarjetas de competencias y áreas de aplicación, compatibles con modo claro y oscuro.
+7. Se actualizaron las comprobaciones: la auditoría estática exige perfil, competencias, áreas y fuente en cada programa; las pruebas de navegador verifican las nuevas secciones. Resultado: **31/31 pruebas correctas**, **22 auditorías automáticas de accesibilidad sin infracciones detectadas** y auditoría estática sin errores.
+8. El ZIP de esta revisión contiene únicamente los archivos modificados que deben reemplazarse en el repositorio, no el proyecto completo ni `node_modules`.
 
 ## Ajuste final: título original y entrega directa para GitHub
 
@@ -86,3 +95,11 @@ La comprobación en Chromium valida el protocolo local utilizado en el aviso rep
 - El ZIP final contiene el proyecto directamente en su raíz, sin un directorio contenedor `unimana/`. Incluye archivos generados, fuentes comentadas, recursos originales, documentación, `CNAME` y `.nojekyll`, listo para copiar el contenido extraído a la raíz del repositorio.
 - En este ajuste se vuelven a ejecutar construcción, comprobación de formato y auditoría estática, y se verifica la integridad del ZIP. El informe de 31 pruebas de navegador y 22 auditorías de accesibilidad corresponde a la revisión de legibilidad anterior; no se modifican estilos, interacciones ni el contenido visible del sitio.
 - Se reemplaza la única entrega ZIP; no se publica ni se sube automáticamente a GitHub.
+
+## Sexta revisión: video introductorio configurable
+
+1. Las 18 fichas de programa incluyen ahora un área `#video` entre la descripción y los módulos, con un ancla adicional en la navegación interna.
+2. Cada programa acepta `introVideo` e `introVideoTitle` en `data/programas.mjs`. Se admiten enlaces `watch`, `youtu.be`, `shorts`, `embed`, `live`, `youtube-nocookie` y el ID de YouTube de 11 caracteres.
+3. Cuando no hay un video introductorio válido, se muestra el aviso «Video introductorio próximamente» y un enlace a admisiones. El video institucional anterior queda como enlace secundario donde existía; ya no se presenta como video propio del programa.
+4. Cuando se define un `introVideo`, el reproductor se genera automáticamente al reconstruir el sitio. La carga es diferida: no se contacta a YouTube hasta que la persona pulsa reproducir.
+5. Se añadieron estilos responsivos para el aviso y el reproductor, compatibles con modo claro y oscuro, y se actualizaron las comprobaciones estáticas y de navegador.

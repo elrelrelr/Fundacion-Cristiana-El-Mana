@@ -4,17 +4,17 @@ El sitio funciona con **HTML, CSS y JavaScript**. Los comentarios explican para 
 
 ## 1. ¿Qué archivo debo abrir?
 
-| Quiero cambiar… | Archivo que debo editar |
-|---|---|
-| Tamaños de letra, colores, espacios o apariencia | `style.css` |
-| Acciones de botones, búsqueda, galería, animaciones o formulario | `index.js` |
-| Textos de inicio, orientación, privacidad, galería o cuentas futuras | `scripts/build.mjs` |
-| Menú, pie, tarjetas, olas, formularios o preguntas compartidas | `scripts/templates.mjs` |
-| Nombres, descripciones, módulos, requisitos y datos de programas | `data/programas.mjs` |
-| Enlaces de redes sociales | `data/social.mjs` |
-| Preferencia de color al abrir la página | `assets/js/theme.js` |
-| Fotografías originales | `imagenes/` y `imagenes/carousel/` |
-| Folleto institucional original | `documentos/folleto-institucional.pdf` |
+| Quiero cambiar…                                                      | Archivo que debo editar                |
+| -------------------------------------------------------------------- | -------------------------------------- |
+| Tamaños de letra, colores, espacios o apariencia                     | `style.css`                            |
+| Acciones de botones, búsqueda, galería, animaciones o formulario     | `index.js`                             |
+| Textos de inicio, orientación, privacidad, galería o cuentas futuras | `scripts/build.mjs`                    |
+| Menú, pie, tarjetas, olas, formularios o preguntas compartidas       | `scripts/templates.mjs`                |
+| Nombres, descripciones, módulos, requisitos y datos de programas     | `data/programas.mjs`                   |
+| Enlaces de redes sociales                                            | `data/social.mjs`                      |
+| Preferencia de color al abrir la página                              | `assets/js/theme.js`                   |
+| Fotografías originales                                               | `imagenes/` y `imagenes/carousel/`     |
+| Folleto institucional original                                       | `documentos/folleto-institucional.pdf` |
 
 **Las rutas son relativas a la raíz del proyecto. El ZIP final trae `index.html` directamente en esa raíz, sin una carpeta adicional `unimana/`.** No cambies los nombres ni las mayúsculas de las páginas antiguas: otros enlaces pueden seguir utilizándolas.
 
@@ -22,16 +22,16 @@ El sitio funciona con **HTML, CSS y JavaScript**. Los comentarios explican para 
 
 Al comienzo de `style.css`, busca el comentario **TAMAÑOS DE LETRA**. Las variables reúnen los tamaños usados por todo el sitio:
 
-| Variable | Se usa principalmente en | Tamaño de esta revisión |
-|---|---|---|
-| `--type-body` | Párrafos principales | 18 px; 17 px hasta 760 px de ancho |
-| `--type-copy` | Descripciones de tarjetas, listas y texto de formularios | 16 px |
-| `--type-lead` | Frases destacadas de las fichas | 20 px; 18 px en teléfono |
-| `--type-subtitle` | Subtítulos pequeños y nombres de módulos | 18 px |
-| `--type-label` | Etiquetas de campos | 15 px |
-| `--type-control` | Botones y enlaces de acción | 15 px |
-| `--type-small` | Ayudas, aclaraciones y notas | 14 px |
-| `--type-eyebrow` | Etiquetas breves en mayúsculas | 13 px |
+| Variable          | Se usa principalmente en                                 | Tamaño de esta revisión            |
+| ----------------- | -------------------------------------------------------- | ---------------------------------- |
+| `--type-body`     | Párrafos principales                                     | 18 px; 17 px hasta 760 px de ancho |
+| `--type-copy`     | Descripciones de tarjetas, listas y texto de formularios | 16 px                              |
+| `--type-lead`     | Frases destacadas de las fichas                          | 20 px; 18 px en teléfono           |
+| `--type-subtitle` | Subtítulos pequeños y nombres de módulos                 | 18 px                              |
+| `--type-label`    | Etiquetas de campos                                      | 15 px                              |
+| `--type-control`  | Botones y enlaces de acción                              | 15 px                              |
+| `--type-small`    | Ayudas, aclaraciones y notas                             | 14 px                              |
+| `--type-eyebrow`  | Etiquetas breves en mayúsculas                           | 13 px                              |
 
 Los valores están escritos en `rem`: con la configuración habitual del navegador, **1 rem equivale a 16 px**. Por ejemplo, `1.125rem` equivale a 18 px. Esta unidad también respeta cambios del tamaño base de letra del navegador.
 
@@ -62,10 +62,28 @@ Abre `data/programas.mjs`. Cada programa tiene un comentario con su identificado
 - `title`: título de la ficha cuando necesita una denominación más precisa.
 - `summary`: resumen de la tarjeta.
 - `description`: párrafos de presentación.
-- `objective`, `profile`, `audience`: objetivo, aprendizajes y destinatarios.
+- `objective`, `audience`: objetivo y destinatarios.
+- `graduateProfile`: resumen del perfil del egresado.
+- `competencies`: tres grupos de competencias (`Saber conocer`, `Saber hacer`, `Saber ser`).
+- `careerAreas`: cuatro áreas de aplicación con título y descripción.
+- `approach`: enfoque del programa.
+- `scopeNote`: aclaración sobre límites profesionales y de certificación.
+- `source`: identifica si la ficha se basa en el PDF suministrado (`kind: 'pdf'`, con páginas y URL) o si es redacción orientativa (`kind: 'editorial'`).
 - `requirements`: requisitos.
 - `modules`: módulos y temas.
 - `duration`, `workload`, `durationNote`: información de tiempo y sus aclaraciones.
+- `introVideo`: enlace o ID del video introductorio de YouTube. Acepta `https://www.youtube.com/watch?v=...`, `https://youtu.be/...`, `shorts`, `embed` o el ID de 11 caracteres.
+- `introVideoTitle`: título accesible opcional del video. Si se omite, se usa «Video introductorio de [programa]».
+- `video`: video institucional heredado. No es el video introductorio; solo queda como enlace secundario mientras no haya `introVideo`.
+
+Para publicar un video introductorio, abre la ficha del programa en `data/programas.mjs` y agrega, por ejemplo:
+
+```js
+introVideo: 'https://www.youtube.com/watch?v=XXXXXXXXXXX',
+introVideoTitle: 'Presentación del programa',
+```
+
+Luego ejecuta `npm run build`. Si `introVideo` está vacío o no es válido, la página muestra el aviso «Video introductorio próximamente» y no carga ningún reproductor. El video solo se conecta a YouTube cuando la persona pulsa reproducir.
 
 **No cambies datos pendientes por cifras supuestas.** Los contenidos orientativos y las condiciones de becas deben seguir identificados como tales hasta que la fundación los apruebe.
 

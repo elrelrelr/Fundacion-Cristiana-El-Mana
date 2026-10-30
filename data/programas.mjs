@@ -1,5 +1,6 @@
 // Catálogo basado en los enlaces del repositorio original (18 programas).
-// Los contenidos nuevos son orientativos, no un plan académico aprobado.
+// Cinco fichas se basan en el PDF suministrado; las demás usan redacción orientativa.
+// Los contenidos nuevos no equivalen a un plan académico aprobado ni a una habilitación profesional.
 // No publicar fechas, precios, acreditaciones o titulaciones sin verificarlos.
 // CATEGORÍAS DEL MENÚ Y DEL CATÁLOGO.
 // id es la clave interna; name es el nombre completo; short es la etiqueta corta; icon el dibujo.
@@ -22,7 +23,8 @@ const pending = 'Por confirmar con admisiones';
 // id identifica el programa; file conserva su dirección; name y title son sus nombres.
 // category elige el grupo; icon y tone cambian el dibujo y el color.
 // tagline es la frase inicial; summary es el resumen de la tarjeta; description son los párrafos.
-// objective explica el objetivo; profile enumera aprendizajes; audience indica a quién se dirige.
+// objective explica el objetivo; graduateProfile resume el perfil; competencies y careerAreas lo desarrollan.
+// audience indica a quién se dirige; approach explica el enfoque; scopeNote delimita alcances; source identifica la fuente.
 // requirements enumera requisitos; modules contiene los módulos; notice agrega una aclaración.
 // duration y workload indican tiempo; durationNote aclara límites; original conserva datos previos.
 // Los datos sin confirmar deben seguir marcados como pendientes, no se completan con suposiciones.
@@ -50,11 +52,68 @@ export const programs = [
     ],
     objective:
       'Comprender los fundamentos de los procesos cognitivos y desarrollar herramientas de análisis de la percepción, la atención, la memoria y el lenguaje.',
-    profile: [
-      'Reconocer los principales modelos de la cognición humana.',
-      'Analizar situaciones de aprendizaje y comunicación desde una perspectiva cognitiva.',
-      'Leer y discutir información académica, reconociendo los límites de la propia formación.',
+    graduateProfile:
+      'Al finalizar el curso, el participante podrá comprender y analizar situaciones de aprendizaje, comunicación y conducta desde los procesos cognitivos. Este perfil corresponde a un curso especializado y no equivale al de una carrera profesional de Psicología.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Modelos fundamentales de la cognición humana.',
+          'Procesos de percepción, atención, memoria y lenguaje.',
+          'Bases neurológicas de la comunicación y el aprendizaje.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Analizar situaciones educativas y cotidianas desde una perspectiva cognitiva.',
+          'Relacionar conceptos de memoria, atención y lenguaje con ejemplos prácticos.',
+          'Leer y discutir información académica reconociendo los límites de la propia formación.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Rigor y curiosidad intelectual.',
+          'Respeto por la diversidad de trayectorias y formas de aprender.',
+          'Responsabilidad ética sobre el alcance de los conocimientos adquiridos.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Apoyo a proyectos educativos',
+        description:
+          'Colaborar en el análisis de necesidades de aprendizaje y en la revisión de materiales educativos.',
+      },
+      {
+        title: 'Divulgación y contenidos',
+        description:
+          'Preparar recursos introductorios sobre cognición, comunicación y aprendizaje con lenguaje claro.',
+      },
+      {
+        title: 'Investigación formativa',
+        description:
+          'Participar como apoyo en lecturas, revisión de fuentes y actividades académicas supervisadas.',
+      },
+      {
+        title: 'Desarrollo personal y profesional',
+        description:
+          'Aplicar herramientas de análisis cognitivo a la propia organización del estudio y la comunicación.',
+      },
+    ],
+    approach:
+      'El curso conecta los fundamentos históricos de la psicología cognitiva con aplicaciones contemporáneas en educación y comunicación. Su alcance es introductorio y especializado: no sustituye un plan de estudios profesional ni habilita para la práctica clínica.',
+    scopeNote:
+      'Curso especializado. No habilita por sí mismo para el ejercicio profesional de la psicología, la evaluación clínica ni la psicoterapia.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Personas interesadas en la psicología, estudiantes y profesionales que deseen aproximarse al estudio de la cognición.',
     requirements: [
@@ -112,11 +171,68 @@ export const programs = [
     ],
     objective:
       'Explorar fundamentos pedagógicos y herramientas para diseñar, acompañar y evaluar experiencias de aprendizaje contextualizadas.',
-    profile: [
-      'Analizar situaciones educativas desde diferentes enfoques pedagógicos.',
-      'Diseñar propuestas didácticas que reconozcan la diversidad de quienes aprenden.',
-      'Participar en proyectos de acompañamiento educativo y trabajo comunitario.',
+    graduateProfile:
+      'El perfil orientativo se centra en comprender cómo aprenden las personas y en diseñar experiencias educativas pertinentes, inclusivas y evaluables. La formación propuesta busca articular reflexión pedagógica, didáctica y trabajo con la comunidad.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Teorías del aprendizaje y del desarrollo humano.',
+          'Fundamentos de currículo, didáctica y evaluación formativa.',
+          'Educación, cultura, diversidad e inclusión.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Diseñar secuencias y recursos de aprendizaje contextualizados.',
+          'Observar y analizar situaciones educativas para proponer mejoras.',
+          'Acompañar procesos de aprendizaje y trabajar con familias y comunidad.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Vocación de servicio y escucha activa.',
+          'Respeto por la diversidad y compromiso con la equidad.',
+          'Reflexión crítica y apertura a la innovación responsable.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Proyectos pedagógicos',
+        description:
+          'Participar en el diseño y acompañamiento de experiencias de aprendizaje en contextos formales o no formales, según la normativa aplicable.',
+      },
+      {
+        title: 'Diseño de recursos educativos',
+        description:
+          'Crear materiales, secuencias didácticas y propuestas de evaluación formativa.',
+      },
+      {
+        title: 'Trabajo comunitario',
+        description:
+          'Colaborar con iniciativas de acompañamiento educativo, lectura, familias y participación social.',
+      },
+      {
+        title: 'Investigación e innovación',
+        description:
+          'Sistematizar prácticas y proponer mejoras basadas en la observación y la evidencia.',
+      },
+    ],
+    approach:
+      'La propuesta conecta la reflexión pedagógica con el análisis de contextos reales. Prioriza la planeación, la evaluación formativa y la construcción de entornos de aprendizaje respetuosos, sin presentar estos ejes como una malla curricular aprobada.',
+    scopeNote:
+      'Las funciones docentes y la denominación del título dependen del plan definitivo, la normativa vigente y la certificación que confirme la fundación.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Personas con vocación educativa e interés en los procesos de enseñanza y aprendizaje.',
     modules: [
@@ -159,11 +275,68 @@ export const programs = [
     ],
     objective:
       'Relacionar la interpretación de los textos bíblicos con la reflexión teológica, la enseñanza y el servicio comunitario.',
-    profile: [
-      'Analizar textos bíblicos con atención a su contexto histórico y literario.',
-      'Construir espacios de enseñanza y diálogo respetuoso sobre la fe.',
-      'Participar en iniciativas comunitarias desde la ética y la vocación de servicio.',
+    graduateProfile:
+      'El perfil orientativo integra el estudio contextual de la Biblia, la reflexión teológica y el servicio a la comunidad. Busca formar personas capaces de enseñar, dialogar y acompañar desde la fe cristiana con responsabilidad y respeto.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Hermenéutica y contexto histórico de los textos bíblicos.',
+          'Historia del pensamiento cristiano y teología sistemática.',
+          'Ética cristiana, liderazgo y acompañamiento comunitario.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Analizar textos bíblicos atendiendo a su contexto histórico y literario.',
+          'Preparar enseñanzas y espacios de diálogo respetuoso sobre la fe.',
+          'Diseñar y acompañar proyectos de servicio comunitario.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Coherencia entre fe, ética y vida cotidiana.',
+          'Respeto por la libertad religiosa y la diversidad de perspectivas.',
+          'Vocación de servicio y trabajo colaborativo.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Enseñanza cristiana',
+        description:
+          'Preparar y facilitar espacios de formación bíblica y reflexión teológica en comunidades e iglesias.',
+      },
+      {
+        title: 'Liderazgo comunitario',
+        description:
+          'Acompañar equipos, iniciativas sociales y proyectos de servicio desde una perspectiva ética.',
+      },
+      {
+        title: 'Acompañamiento pastoral',
+        description:
+          'Colaborar en procesos de escucha y orientación comunitaria dentro de los límites de la formación recibida.',
+      },
+      {
+        title: 'Escritura e investigación',
+        description:
+          'Producir materiales de estudio, reflexión y divulgación teológica con rigor académico.',
+      },
+    ],
+    approach:
+      'La propuesta relaciona la interpretación bíblica con la historia del pensamiento cristiano y los desafíos contemporáneos. En coherencia con la identidad de la fundación, promueve el diálogo, la ética y el servicio sin imponer una lectura única de la fe.',
+    scopeNote:
+      'La denominación del programa, el título y sus alcances deben ser confirmados por la fundación; esta ficha no otorga habilitaciones profesionales reguladas.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Personas interesadas en el estudio teológico, la enseñanza cristiana y el liderazgo comunitario.',
     modules: [
@@ -207,11 +380,68 @@ export const programs = [
     ],
     objective:
       'Conocer principios del cuidado humanizado y del apoyo seguro a los procesos de atención en salud.',
-    profile: [
-      'Reconocer medidas de bioseguridad y prevención de riesgos.',
-      'Comprender la importancia de la comunicación y el trato digno en el cuidado.',
-      'Identificar funciones de apoyo y límites de actuación dentro de un equipo de salud.',
+    graduateProfile:
+      'El perfil orientativo se dirige al apoyo del cuidado humanizado y seguro de las personas, bajo la supervisión y dentro de los límites de la formación técnica. Integra bioseguridad, comunicación y colaboración con el equipo de salud.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Principios de bioseguridad y prevención de riesgos.',
+          'Fundamentos de anatomía, fisiología y cuidado básico.',
+          'Organización de servicios de salud y trabajo en equipo.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Apoyar actividades de cuidado e higiene según protocolos y supervisión.',
+          'Reconocer señales de alerta y comunicarlas oportunamente al equipo responsable.',
+          'Registrar información básica y orientar a pacientes y familias dentro de su alcance.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Trato digno, empatía y respeto por la autonomía.',
+          'Responsabilidad, confidencialidad y disciplina en el cumplimiento de protocolos.',
+          'Disposición al aprendizaje continuo y al trabajo interdisciplinario.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Apoyo en servicios de salud',
+        description:
+          'Colaborar en tareas básicas de cuidado y organización bajo protocolos institucionales y supervisión.',
+      },
+      {
+        title: 'Promoción y prevención',
+        description:
+          'Participar en jornadas educativas y actividades comunitarias de promoción de la salud.',
+      },
+      {
+        title: 'Acompañamiento a personas y familias',
+        description:
+          'Brindar apoyo informativo y de orientación dentro del alcance técnico confirmado.',
+      },
+      {
+        title: 'Gestión de insumos y registros',
+        description:
+          'Apoyar la organización de materiales, espacios y registros según los procedimientos del servicio.',
+      },
+    ],
+    approach:
+      'La propuesta prioriza el cuidado humanizado, la seguridad del paciente y la comunicación con el equipo de salud. Los escenarios prácticos, la supervisión y las autorizaciones deben verificarse antes de la inscripción.',
+    scopeNote:
+      'Esta ficha no habilita para ejercer como profesional de enfermería ni para realizar actos clínicos reservados. Las funciones permitidas dependen de la certificación, la normativa y la supervisión.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Personas con vocación de cuidado e interés en la atención y el bienestar de la comunidad.',
     notice:
@@ -257,11 +487,68 @@ export const programs = [
     ],
     objective:
       'Identificar fundamentos de bienestar animal y de apoyo seguro a los equipos veterinarios, dentro de un alcance formativo claramente definido.',
-    profile: [
-      'Reconocer necesidades básicas de cuidado y bienestar de los animales.',
-      'Comprender prácticas de higiene, prevención y manejo responsable.',
-      'Apoyar acciones de educación y sensibilización bajo orientación profesional.',
+    graduateProfile:
+      'El perfil orientativo se centra en el apoyo responsable al cuidado animal y al trabajo de equipos veterinarios. Promueve el bienestar animal, la prevención y la educación comunitaria, sin sustituir la formación profesional en medicina veterinaria.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Principios de bienestar, comportamiento y manejo respetuoso de animales.',
+          'Higiene, bioseguridad y cuidados básicos.',
+          'Organización de entornos de atención y tenencia responsable.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Apoyar la preparación de espacios, materiales y registros bajo supervisión.',
+          'Reconocer necesidades básicas de cuidado y comunicar observaciones al equipo veterinario.',
+          'Participar en actividades de educación y prevención dirigidas a cuidadores y comunidad.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Respeto por la vida animal y rechazo al maltrato.',
+          'Responsabilidad en el cumplimiento de protocolos y límites de actuación.',
+          'Comunicación clara y colaborativa con profesionales y cuidadores.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Apoyo en entornos veterinarios',
+        description:
+          'Colaborar en tareas de organización, higiene y preparación bajo supervisión de profesionales habilitados.',
+      },
+      {
+        title: 'Bienestar y tenencia responsable',
+        description:
+          'Participar en campañas educativas sobre cuidado, prevención y convivencia con animales.',
+      },
+      {
+        title: 'Gestión de espacios de cuidado',
+        description:
+          'Apoyar la organización de insumos, registros y condiciones básicas de alojamiento y atención.',
+      },
+      {
+        title: 'Proyectos comunitarios',
+        description:
+          'Colaborar con iniciativas de sensibilización y protección animal en articulación con entidades competentes.',
+      },
+    ],
+    approach:
+      'La propuesta articula bienestar animal, prevención y apoyo seguro a los equipos veterinarios. El componente práctico debe desarrollarse en escenarios autorizados, con protocolos de bioseguridad y supervisión profesional.',
+    scopeNote:
+      'El diagnóstico, la prescripción, la cirugía y los tratamientos corresponden a médicos veterinarios habilitados. Esta ficha no sustituye ese título profesional.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Personas interesadas en el cuidado animal y en las tareas de apoyo en entornos veterinarios.',
     notice:
@@ -306,11 +593,68 @@ export const programs = [
     ],
     objective:
       'Analizar aportes de la neuropsicología a la comprensión del desarrollo y a la planeación de apoyos educativos inclusivos.',
-    profile: [
-      'Relacionar procesos cognitivos con situaciones de aprendizaje.',
-      'Distinguir hallazgos científicos de neuromitos frecuentes.',
-      'Proponer apoyos educativos y reconocer cuándo se requiere una remisión profesional.',
+    graduateProfile:
+      'El perfil orientativo busca comprender la relación entre neurodesarrollo, cognición y aprendizaje para enriquecer la práctica educativa. Se enfatiza la lectura crítica de evidencia y el diseño de apoyos pedagógicos, no el diagnóstico clínico.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Neurodesarrollo, plasticidad y procesos cognitivos básicos.',
+          'Atención, memoria, lenguaje y funciones ejecutivas en el aprendizaje.',
+          'Barreras, apoyos educativos y neuromitos frecuentes.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Analizar demandas cognitivas de tareas y entornos de aprendizaje.',
+          'Proponer ajustes pedagógicos y estrategias de aula contextualizadas.',
+          'Colaborar con docentes, familias y equipos interdisciplinarios y reconocer cuándo remitir.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Pensamiento crítico frente a afirmaciones sobre el cerebro.',
+          'Respeto por la variabilidad del desarrollo y las trayectorias educativas.',
+          'Prudencia ética y trabajo colaborativo.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Apoyo a prácticas educativas',
+        description:
+          'Colaborar en el análisis de barreras y en la planeación de apoyos dentro de instituciones educativas.',
+      },
+      {
+        title: 'Formación docente',
+        description:
+          'Diseñar talleres y materiales sobre cognición, aprendizaje y uso responsable de evidencia.',
+      },
+      {
+        title: 'Diseño de recursos',
+        description:
+          'Revisar actividades y materiales considerando atención, memoria, lenguaje y funciones ejecutivas.',
+      },
+      {
+        title: 'Investigación educativa',
+        description:
+          'Participar en proyectos de lectura, análisis y sistematización de experiencias de aprendizaje.',
+      },
+    ],
+    approach:
+      'La propuesta se aleja de explicaciones simplistas sobre el cerebro y promueve una mirada interdisciplinaria. Su aplicación es educativa: comprender procesos cognitivos para mejorar apoyos, sin convertir la formación en una habilitación clínica.',
+    scopeNote:
+      'No habilita para realizar diagnósticos neuropsicológicos, evaluaciones clínicas ni tratamientos. Esas actividades requieren formación y autorización profesional específicas.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales de educación, psicología y áreas afines; el perfil de ingreso definitivo debe confirmarse.',
     modules: [
@@ -353,11 +697,68 @@ export const programs = [
     ],
     objective:
       'Comprender retos psicosociales del contexto penitenciario y criterios éticos para el trabajo interdisciplinario y la reintegración.',
-    profile: [
-      'Analizar factores psicosociales presentes en entornos penitenciarios.',
-      'Reconocer enfoques de derechos y necesidades de acompañamiento.',
-      'Participar en la formulación de iniciativas de convivencia y reintegración según su habilitación profesional.',
+    graduateProfile:
+      'El perfil orientativo analiza los procesos psicosociales en contextos de privación de libertad y los retos de convivencia, salud mental y reintegración. Propone una actuación ética, interdisciplinaria y centrada en la dignidad humana.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Sistema penitenciario, derechos humanos y contexto institucional.',
+          'Factores psicosociales de riesgo, protección y convivencia.',
+          'Enfoques de acompañamiento, reintegración y trabajo en red.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Analizar necesidades psicosociales y proponer acciones educativas o de apoyo según el rol profesional.',
+          'Participar en iniciativas de convivencia, resolución de conflictos y fortalecimiento de redes.',
+          'Colaborar con equipos interdisciplinarios y evaluar iniciativas de reintegración.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Respeto irrestricto por la dignidad y los derechos de las personas.',
+          'Confidencialidad, imparcialidad y responsabilidad ética.',
+          'Sensibilidad frente al estigma y compromiso con la inclusión social.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Programas psicosociales',
+        description:
+          'Colaborar en iniciativas de convivencia, educación y fortalecimiento de vínculos, según la habilitación profesional.',
+      },
+      {
+        title: 'Reintegración social',
+        description:
+          'Apoyar acciones de articulación con familias, comunidad y redes de oportunidades.',
+      },
+      {
+        title: 'Trabajo interdisciplinario',
+        description:
+          'Participar con equipos jurídicos, sociales y de salud en el análisis de necesidades y rutas de atención.',
+      },
+      {
+        title: 'Investigación aplicada',
+        description:
+          'Sistematizar experiencias y evaluar programas con enfoque de derechos y rigor metodológico.',
+      },
+    ],
+    approach:
+      'La propuesta sitúa la dignidad humana y los derechos en el centro del análisis. Evita reducir la conducta a rasgos individuales y promueve la comprensión del contexto institucional, las redes de apoyo y las oportunidades de reintegración.',
+    scopeNote:
+      'Las funciones clínicas, periciales o de evaluación psicológica requieren título, habilitación y competencias específicas. El programa no las otorga por sí mismo.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales de psicología, ciencias sociales y áreas relacionadas; consultar requisitos específicos.',
     modules: [
@@ -400,11 +801,68 @@ export const programs = [
     ],
     objective:
       'Reconocer los campos de relación entre psicología y derecho, sus fundamentos y los criterios éticos de la actuación profesional.',
-    profile: [
-      'Distinguir los principales ámbitos de la psicología jurídica.',
-      'Analizar las implicaciones éticas de la información psicológica en contextos legales.',
-      'Comprender el papel del trabajo interdisciplinario y los límites de la práctica pericial.',
+    graduateProfile:
+      'El perfil orientativo explora la relación entre comportamiento humano, derechos y contextos judiciales. Busca aportar criterios éticos y metodológicos al trabajo interdisciplinario, con especial cuidado en testimonio, victimología y límites de la actividad pericial.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Campos de relación entre psicología y derecho.',
+          'Procesos de memoria, testimonio, sesgos y toma de decisiones.',
+          'Victimología, derechos humanos y ética profesional.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Analizar información psicológica en contextos legales reconociendo sus límites.',
+          'Leer críticamente informes y colaborar con equipos jurídicos e interdisciplinarios.',
+          'Identificar necesidades de protección, remisión y prevención de revictimización.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Imparcialidad, rigor y transparencia metodológica.',
+          'Respeto por los derechos de todas las partes.',
+          'Confidencialidad y responsabilidad sobre el uso de la información.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Equipos interdisciplinarios',
+        description:
+          'Colaborar en el análisis de casos y rutas de atención desde una perspectiva psicosocial y jurídica.',
+      },
+      {
+        title: 'Atención a víctimas',
+        description:
+          'Participar en iniciativas de orientación, protección y prevención de revictimización según el rol profesional.',
+      },
+      {
+        title: 'Investigación y análisis',
+        description:
+          'Revisar literatura, informes y evidencia sobre testimonio, decisión y contextos judiciales.',
+      },
+      {
+        title: 'Formación y prevención',
+        description:
+          'Diseñar actividades educativas sobre derechos, memoria, sesgos y actuación ética.',
+      },
+    ],
+    approach:
+      'La propuesta enfatiza el rigor metodológico y la comprensión de los límites de la información psicológica en contextos legales. Distingue el aporte interdisciplinario de la actividad pericial, que exige formación y habilitación específicas.',
+    scopeNote:
+      'La práctica pericial, la evaluación forense y los informes con efectos judiciales requieren habilitación y competencias específicas. Esta ficha no las confiere.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales de psicología, derecho y áreas afines; admisiones debe confirmar el perfil requerido.',
     modules: [
@@ -447,11 +905,68 @@ export const programs = [
     ],
     objective:
       'Analizar la sexualidad humana desde un enfoque integral, ético y basado en derechos, reconociendo los alcances de la educación y la atención profesional.',
-    profile: [
-      'Comprender dimensiones de la sexualidad y el bienestar.',
-      'Diseñar propuestas educativas respetuosas y contextualizadas.',
-      'Reconocer criterios de remisión y colaboración con profesionales de salud.',
+    graduateProfile:
+      'El perfil orientativo aborda la sexualidad humana desde la educación, los derechos y el trabajo interdisciplinario. Busca fortalecer criterios para la promoción del bienestar, la orientación educativa y la derivación responsable, sin asumir una habilitación clínica automática.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Dimensiones biológicas, psicológicas, sociales y culturales de la sexualidad.',
+          'Derechos sexuales, consentimiento, diversidad y bienestar.',
+          'Educación afectivo-sexual, prevención y trabajo en red.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Diseñar propuestas educativas respetuosas y contextualizadas.',
+          'Reconocer necesidades de orientación y criterios de remisión a profesionales de salud.',
+          'Colaborar con equipos interdisciplinarios en proyectos de educación y bienestar.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Respeto por la diversidad y rechazo a la discriminación.',
+          'Escucha activa, confidencialidad y comunicación clara.',
+          'Actuación ética dentro de los límites de la formación previa.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Educación afectivo-sexual',
+        description:
+          'Participar en talleres y materiales de educación sexual integral para distintos contextos y edades.',
+      },
+      {
+        title: 'Promoción del bienestar',
+        description:
+          'Colaborar en iniciativas de prevención, derechos y búsqueda de apoyo profesional.',
+      },
+      {
+        title: 'Trabajo interdisciplinario',
+        description:
+          'Articular acciones con profesionales de salud, psicología y educación según el caso.',
+      },
+      {
+        title: 'Investigación y divulgación',
+        description:
+          'Analizar fuentes y producir contenidos responsables sobre sexualidad y bienestar.',
+      },
+    ],
+    approach:
+      'Esta ficha de especialización no aparece en el PDF suministrado. Su redacción es orientativa y se distingue del diplomado «Sexología y Terapia Sexual» que sí figura en el documento; no se transfieren automáticamente sus contenidos ni duración.',
+    scopeNote:
+      'La atención terapéutica o clínica requiere formación previa, habilitación y supervisión cuando corresponda. Este programa no la sustituye ni la garantiza.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales de salud, psicología, educación y áreas afines; consultar el perfil de admisión.',
     modules: [
@@ -494,11 +1009,68 @@ export const programs = [
     ],
     objective:
       'Comprender factores que influyen en la nutrición de las personas mayores y reconocer estrategias de educación y cuidado interdisciplinario.',
-    profile: [
-      'Identificar factores sociales y fisiológicos que afectan la alimentación.',
-      'Reconocer señales que ameritan valoración profesional.',
-      'Participar en iniciativas de educación y acompañamiento del bienestar.',
+    graduateProfile:
+      'El perfil orientativo se centra en comprender los factores nutricionales, funcionales y sociales que influyen en la alimentación de las personas mayores. Propone apoyar la educación alimentaria y el trabajo interdisciplinario, respetando los límites de la práctica profesional.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Cambios fisiológicos del envejecimiento y su relación con la alimentación.',
+          'Factores de riesgo nutricional, sociales y funcionales en la vejez.',
+          'Educación alimentaria, entornos accesibles y redes de cuidado.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Identificar factores que pueden afectar la alimentación y reconocer señales de alerta para remisión.',
+          'Participar en actividades de educación y acompañamiento nutricional dentro del alcance profesional.',
+          'Colaborar con equipos de salud, cuidadores y familias en iniciativas de bienestar.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Respeto por la autonomía, hábitos y contexto cultural de la persona mayor.',
+          'Empatía y comunicación clara con personas mayores y cuidadores.',
+          'Prudencia, actualización y trabajo interdisciplinario.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Programas para personas mayores',
+        description:
+          'Colaborar en iniciativas de educación alimentaria y envejecimiento saludable en contextos comunitarios o institucionales.',
+      },
+      {
+        title: 'Apoyo a cuidadores y familias',
+        description:
+          'Orientar sobre organización de entornos de alimentación y búsqueda de valoración profesional.',
+      },
+      {
+        title: 'Promoción y prevención',
+        description:
+          'Participar en campañas de hábitos saludables y detección de situaciones que requieren atención especializada.',
+      },
+      {
+        title: 'Proyectos interdisciplinarios',
+        description:
+          'Aportar a equipos de salud, gerontología y nutrición en la planeación de acciones de apoyo.',
+      },
+    ],
+    approach:
+      'La propuesta relaciona envejecimiento, alimentación y contexto social. Evita reducir la nutrición geriátrica a una lista de alimentos y promueve la autonomía, la accesibilidad y la derivación oportuna a profesionales cuando se requieren valoraciones clínicas.',
+    scopeNote:
+      'La valoración nutricional clínica y la prescripción dietética requieren formación y habilitación profesional. Esta ficha no las otorga por sí misma.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales vinculados con nutrición, salud y atención a personas mayores; requisitos sujetos a confirmación.',
     modules: [
@@ -541,11 +1113,67 @@ export const programs = [
     ],
     objective:
       'Explorar herramientas de investigación y reflexión crítica aplicables a problemas educativos contextualizados.',
-    profile: [
-      'Formular preguntas de investigación sobre procesos educativos.',
-      'Analizar propuestas curriculares y decisiones pedagógicas.',
-      'Diseñar iniciativas de innovación con atención a la inclusión y el contexto.',
+    graduateProfile:
+      'El perfil orientativo se dirige a profundizar en investigación, innovación y liderazgo educativo. Busca fortalecer la capacidad de analizar problemas educativos, diseñar propuestas contextualizadas y generar reflexión rigurosa sobre la práctica.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Teorías contemporáneas de la educación, currículo e inclusión.',
+          'Métodos de investigación educativa y ética de la investigación.',
+          'Evaluación, innovación y gestión de proyectos educativos.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Formular preguntas y proyectos de investigación sobre problemas educativos.',
+          'Analizar propuestas curriculares y decisiones pedagógicas con criterios teóricos y contextuales.',
+          'Diseñar y evaluar iniciativas de innovación con atención a la inclusión.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Pensamiento crítico y apertura al diálogo académico.',
+          'Compromiso con la equidad y la mejora de las oportunidades de aprendizaje.',
+          'Responsabilidad ética en el uso de datos y la participación de comunidades.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Investigación educativa',
+        description:
+          'Desarrollar estudios y sistematizaciones que aporten a la comprensión de problemas de aprendizaje y enseñanza.',
+      },
+      {
+        title: 'Innovación curricular',
+        description:
+          'Participar en el diseño, revisión y evaluación de propuestas pedagógicas y curriculares.',
+      },
+      {
+        title: 'Liderazgo académico',
+        description: 'Acompañar equipos, proyectos institucionales y procesos de mejora educativa.',
+      },
+      {
+        title: 'Asesoría y formación',
+        description:
+          'Colaborar en la formación de docentes y en la toma de decisiones basada en evidencia y contexto.',
+      },
+    ],
+    approach:
+      'La propuesta invita a investigar la práctica educativa y a dialogar con teorías contemporáneas. La estructura académica definitiva, la institución que certifica y las condiciones de titulación deben confirmarse con admisiones.',
+    scopeNote:
+      'La denominación de maestría, el título, el registro y sus efectos académicos o profesionales dependen de la confirmación institucional y de la normativa aplicable.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales con interés en investigación y transformación educativa; verificar titulación de ingreso.',
     modules: [
@@ -588,11 +1216,68 @@ export const programs = [
     ],
     objective:
       'Articular reflexión teológica e investigación para analizar cuestiones contemporáneas de fe, ética y vida comunitaria.',
-    profile: [
-      'Interpretar fuentes teológicas con rigor y contextualización.',
-      'Construir argumentos en diálogo con distintas perspectivas.',
-      'Formular proyectos de investigación o reflexión teológica aplicada.',
+    graduateProfile:
+      'El perfil orientativo profundiza en la interpretación de fuentes, la reflexión teológica y la investigación de cuestiones contemporáneas de fe, ética y comunidad. Busca articular rigor académico, diálogo respetuoso y vocación de servicio.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Hermenéutica bíblica y lectura crítica de fuentes teológicas.',
+          'Historia del pensamiento cristiano y debates contemporáneos.',
+          'Métodos de investigación, escritura académica y ética social cristiana.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Interpretar textos y fuentes teológicas con rigor y contextualización.',
+          'Construir argumentos en diálogo con distintas perspectivas y tradiciones.',
+          'Formular proyectos de investigación o reflexión teológica aplicada a la comunidad.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Honestidad intelectual y respeto por las fuentes.',
+          'Apertura al diálogo y a la libertad religiosa.',
+          'Coherencia entre reflexión, ética y servicio.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Investigación teológica',
+        description:
+          'Desarrollar proyectos de análisis de fuentes, historia y pensamiento cristiano.',
+      },
+      {
+        title: 'Enseñanza y formación',
+        description:
+          'Participar en espacios de educación teológica y acompañamiento académico según los requisitos institucionales.',
+      },
+      {
+        title: 'Reflexión comunitaria',
+        description:
+          'Aportar criterios éticos y teológicos a iniciativas sociales y de liderazgo comunitario.',
+      },
+      {
+        title: 'Escritura y divulgación',
+        description:
+          'Producir materiales académicos y de formación para comunidades e instituciones.',
+      },
+    ],
+    approach:
+      'La propuesta conecta la tradición cristiana con preguntas del presente y promueve una investigación respetuosa y rigurosa. El plan definitivo, los requisitos académicos y el alcance de la certificación deben consultarse con la fundación.',
+    scopeNote:
+      'La denominación de maestría, el título y sus efectos académicos o profesionales requieren confirmación institucional y normativa.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales con formación o trayectoria afín a la teología; confirmar los requisitos específicos.',
     modules: [
@@ -635,11 +1320,68 @@ export const programs = [
     ],
     objective:
       'Analizar problemas colectivos de salud y explorar herramientas de investigación y gestión para propuestas contextualizadas.',
-    profile: [
-      'Reconocer determinantes sociales de la salud.',
-      'Interpretar evidencia sobre problemas de salud colectiva.',
-      'Participar en la planeación y evaluación de iniciativas de promoción y prevención.',
+    graduateProfile:
+      'El perfil orientativo se centra en analizar problemas colectivos de salud y en explorar herramientas de investigación, gestión y evaluación de iniciativas. Promueve una mirada interdisciplinaria, comunitaria y basada en evidencia.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Determinantes sociales de la salud y equidad.',
+          'Fundamentos de epidemiología e investigación en salud.',
+          'Promoción, prevención, sistemas de salud y gestión de proyectos.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Interpretar evidencia sobre problemas de salud colectiva.',
+          'Participar en la planeación y evaluación de iniciativas de promoción y prevención.',
+          'Articular actores comunitarios e institucionales en proyectos de salud pública.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Compromiso con la equidad y los derechos en salud.',
+          'Rigor en el uso de datos y respeto por las comunidades.',
+          'Trabajo interdisciplinario y participación responsable.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Programas de salud colectiva',
+        description:
+          'Colaborar en el diseño, gestión y evaluación de iniciativas de promoción y prevención.',
+      },
+      {
+        title: 'Investigación poblacional',
+        description:
+          'Participar en estudios sobre determinantes, necesidades y resultados en salud.',
+      },
+      {
+        title: 'Gestión y políticas',
+        description:
+          'Aportar análisis y evidencia a decisiones institucionales y comunitarias en salud.',
+      },
+      {
+        title: 'Educación y participación',
+        description:
+          'Diseñar acciones de comunicación y trabajo con comunidades para el bienestar colectivo.',
+      },
+    ],
+    approach:
+      'La propuesta relaciona determinantes sociales, evidencia y participación comunitaria. Los requisitos, la carga académica y la certificación del programa anunciado en el catálogo requieren confirmación institucional.',
+    scopeNote:
+      'La denominación de maestría, el título y sus efectos académicos o profesionales requieren confirmación institucional. No habilita automáticamente para actos clínicos reservados.',
+    source: {
+      kind: 'editorial',
+      label: 'Redacción orientativa',
+      note: 'Programa no incluido en el PDF suministrado.',
+    },
     audience:
       'Profesionales de salud, ciencias sociales y áreas afines; consultar las condiciones de ingreso.',
     modules: [
@@ -680,18 +1422,76 @@ export const programs = [
     duration: 'Aprox. 11 meses',
     workload: '550 horas',
     durationNote:
-      'Duración publicada en el sitio original. Confirma calendario, intensidad y vigencia con admisiones.',
+      'Intensidad y duración de referencia del PDF (pp. 1–2): 550 horas, aprox. 11 meses. Confirma calendario y vigencia con admisiones.',
     description: [
       'La Programación Neurolingüística (PNL) reúne modelos y técnicas de comunicación y cambio personal. El contenido publicado aborda liderazgo, negociación, aprendizaje y relaciones en diferentes contextos.',
       'El programa se presenta con una mirada crítica: la evidencia científica sobre la eficacia de la PNL es limitada y no debe confundirse con psicoterapia ni con tratamientos de salud validados. Se invita a distinguir herramientas de comunicación de afirmaciones clínicas.',
     ],
     objective:
       'Conocer los modelos de la PNL y analizar sus aplicaciones comunicativas, limitaciones y relación con la evidencia disponible.',
-    profile: [
-      'Reconocer modelos y técnicas de comunicación de la PNL.',
-      'Reflexionar sobre habilidades de escucha, negociación y liderazgo.',
-      'Evaluar críticamente las afirmaciones y actuar dentro de límites éticos y profesionales.',
+    graduateProfile:
+      'El documento describe un perfil de facilitador comunicacional con herramientas de PNL aplicables a educación, organizaciones y desarrollo personal. La ficha conserva una lectura crítica: la PNL no se presenta como psicoterapia ni como tratamiento de salud validado.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Historia, presuposiciones y principios de la PNL.',
+          'Modelos de comunicación, rapport, anclajes y submodalidades.',
+          'Liderazgo, negociación, teoría del cambio y neurociencia del lenguaje.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Analizar procesos de comunicación y relaciones interpersonales.',
+          'Aplicar técnicas de PNL en actividades educativas, organizacionales y de desarrollo personal.',
+          'Evaluar críticamente afirmaciones y actuar dentro de límites éticos y profesionales.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Empatía, escucha y comunicación respetuosa.',
+          'Responsabilidad sobre el alcance de las técnicas y de las promesas de cambio.',
+          'Pensamiento crítico frente a la evidencia y las afirmaciones de eficacia.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Comunicación y formación',
+        description:
+          'Facilitar actividades de comunicación, liderazgo y habilidades interpersonales en contextos educativos u organizacionales.',
+      },
+      {
+        title: 'Desarrollo organizacional',
+        description:
+          'Colaborar en procesos de equipo, negociación y gestión del cambio dentro de organizaciones.',
+      },
+      {
+        title: 'Desarrollo personal',
+        description:
+          'Acompañar procesos de metas y aprendizaje desde un enfoque no clínico y ético.',
+      },
+      {
+        title: 'Investigación y divulgación crítica',
+        description:
+          'Analizar modelos de PNL, sus aplicaciones y los límites de la evidencia disponible.',
+      },
+    ],
+    approach:
+      'El PDF plantea integrar PNL, comunicación y aprendizaje activo con una mirada crítica. La web no traslada las afirmaciones de eficacia clínica o respaldo institucional del documento como hechos verificados; mantiene la advertencia sobre los límites de la evidencia.',
+    scopeNote:
+      'La PNL no habilita para ejercer psicoterapia, diagnosticar ni tratar condiciones de salud. Su uso debe respetar la formación previa y los límites profesionales.',
+    source: {
+      kind: 'pdf',
+      label: 'PDF institucional suministrado',
+      pages: [1, 2],
+      url: 'https://www.mediafire.com/file/o98wdwluqpibowc/cursos+de+la+universidad.pdf/file',
+    },
     audience:
       'Personas interesadas en comunicación, educación y desarrollo de habilidades interpersonales.',
     modules: [
@@ -744,58 +1544,116 @@ export const programs = [
     duration: '4 niveles de formación',
     workload: '240 horas',
     durationNote:
-      '60 horas por nivel según el contenido original. El calendario debe confirmarse con admisiones.',
+      'El PDF (pp. 11–15) indica 240 horas: cuatro niveles de 60 h, integrados por 12 módulos de 20 h. El calendario debe confirmarse con admisiones.',
     description: [
       'Este programa aborda el derecho a una educación de calidad y la eliminación de barreras asociadas a la discapacidad y a los contextos culturales. El contenido publicado toma como referencias la Ley 1618 de 2013 y el Decreto 1421 de 2017 en Colombia.',
       'Propone una mirada centrada en las fortalezas y la diversidad cognitiva. Incluye neurodesarrollo, TEA, TDAH y dislexia, junto con estrategias multisensoriales, adaptaciones curriculares y colaboración con familias y comunidades.',
     ],
     objective:
       'Reconocer barreras para el aprendizaje y explorar estrategias pedagógicas que favorezcan la participación de estudiantes con distintas necesidades y fortalezas.',
-    profile: [
-      'Comprender conceptos de neurodiversidad y desarrollo.',
-      'Proponer estrategias y ajustes educativos contextualizados.',
-      'Promover el trabajo conjunto entre docentes, familias y comunidad.',
+    graduateProfile:
+      'El documento propone un perfil centrado en comprender el neurodesarrollo, identificar barreras y diseñar apoyos educativos inclusivos. Destaca la colaboración con familias y equipos, el uso de tecnología de apoyo y el respeto por las fortalezas cognitivas.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Neurodesarrollo, aprendizaje y condiciones como TEA, TDAH y dislexia.',
+          'Marco de derechos, Ley 1618 de 2013 y Decreto 1421 de 2017 en Colombia.',
+          'Estrategias multisensoriales, ajustes curriculares y tecnologías de apoyo.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Diseñar estrategias pedagógicas individualizadas y rutinas visuales.',
+          'Seleccionar recursos accesibles y colaborar con familias y equipos multidisciplinarios.',
+          'Participar en procesos de transición educativa y laboral y en proyectos de innovación inclusiva.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Respeto profundo por las diferencias cognitivas y las fortalezas de cada persona.',
+          'Paciencia, persistencia y mentalidad abierta para adaptar entornos.',
+          'Reflexión ética y disposición a cuestionar prácticas excluyentes.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Aulas y apoyos educativos',
+        description:
+          'Colaborar en prácticas inclusivas y apoyos al aprendizaje en instituciones educativas, según el rol y la normativa.',
+      },
+      {
+        title: 'Trabajo con familias y comunidad',
+        description:
+          'Acompañar procesos de coordinación, orientación educativa y construcción de redes de apoyo.',
+      },
+      {
+        title: 'Tecnología y recursos accesibles',
+        description:
+          'Participar en la selección y diseño de materiales, aplicaciones y tecnologías de apoyo.',
+      },
+      {
+        title: 'Investigación e innovación',
+        description:
+          'Desarrollar proyectos de neuroeducación, sistematización de experiencias y mejora de políticas inclusivas.',
+      },
+    ],
+    approach:
+      'El PDF destaca una mirada centrada en fortalezas y no en déficits, con integración de neurociencia, psicología y pedagogía. Propone innovación tecnológica y trabajo interdisciplinario; la detección mencionada se entiende en el ámbito educativo y no como habilitación clínica.',
+    scopeNote:
+      'El diplomado no habilita para diagnóstico clínico, asesoría psicológica escolar ni intervenciones sanitarias reservadas. Esas funciones exigen titulación y habilitación específicas.',
+    source: {
+      kind: 'pdf',
+      label: 'PDF institucional suministrado',
+      pages: [11, 12, 13, 14, 15],
+      url: 'https://www.mediafire.com/file/o98wdwluqpibowc/cursos+de+la+universidad.pdf/file',
+    },
     audience:
       'Docentes, orientadores, estudiantes de educación y personas interesadas en inclusión educativa.',
     modules: [
       module(
-        'Fase inicial',
-        'Bases y diagnóstico educativo',
+        'Nivel básico',
+        'Fundamentos, bases y detección educativa',
         [
-          'Fundamentos de la neurodiversidad',
-          'Bases neurobiológicas del aprendizaje',
-          'Detección y cribados psicopedagógicos',
+          'Fundamentos de la Neurodiversidad · 20 h',
+          'Bases neurobiológicas y psicológicas · 20 h',
+          'Detección y diagnóstico educativo · 20 h',
         ],
         '60 horas',
       ),
       module(
-        'Fase práctica',
-        'Estrategias de enseñanza',
+        'Nivel intermedio',
+        'Estrategias de enseñanza y adaptación',
         [
-          'Enseñanza multisensorial y rutinas',
-          'Regulación emocional y social',
-          'Adaptaciones curriculares avanzadas',
+          'Estrategias de enseñanza multisensorial · 20 h',
+          'Regulación emocional y social · 20 h',
+          'Adaptaciones curriculares avanzadas · 20 h',
         ],
         '60 horas',
       ),
       module(
-        'Fase de integración',
-        'Comunidad e innovación',
+        'Nivel avanzado',
+        'Comunidad, investigación e innovación',
         [
-          'Trabajo con familias y comunidad',
-          'Investigación aplicada',
-          'Innovación en neuroeducación e IA',
+          'Trabajo con familias y comunidad · 20 h',
+          'Investigación aplicada en neurodiversidad · 20 h',
+          'Innovación en neuroeducación · 20 h',
         ],
         '60 horas',
       ),
       module(
-        'Fase avanzada',
-        'Gestión y diseño curricular',
+        'Nivel experto',
+        'Gestión y diseño curricular inclusivo',
         [
-          'Políticas en neurodiversidad',
-          'Diseño curricular inclusivo',
-          'Estrategias didácticas aplicadas',
+          'Gestión y políticas en neurodiversidad · 20 h',
+          'Diseño curricular inclusivo · 20 h',
+          'Estrategias didácticas inclusivas · 20 h',
         ],
         '60 horas',
       ),
@@ -816,18 +1674,76 @@ export const programs = [
     duration: 'Aprox. 19 meses',
     workload: '750 horas',
     durationNote:
-      'Duración aproximada publicada en el sitio original. Consulta el calendario vigente.',
+      'Intensidad y duración de referencia del PDF (pp. 3–4): 750 horas, aprox. 19 meses. Confirma calendario y vigencia con admisiones.',
     description: [
       'La gerontología ofrece un estudio integral del envejecimiento y de las condiciones que favorecen una vejez activa y saludable. El programa aborda desafíos como la fragilidad, la dependencia, la soledad y las enfermedades crónicas asociadas.',
       'Integra perspectivas biomédicas, de políticas públicas y de psicogerontología para comprender los modelos de atención, el apoyo sociofamiliar y la participación de las personas mayores.',
     ],
     objective:
       'Comprender el envejecimiento desde distintas disciplinas y reconocer estrategias de acompañamiento, participación y atención integral a las personas mayores.',
-    profile: [
-      'Analizar dimensiones biológicas, psicológicas y sociales del envejecimiento.',
-      'Participar en proyectos y redes de apoyo sociofamiliar.',
-      'Comprender políticas y modelos de atención, respetando los alcances de su formación previa.',
+    graduateProfile:
+      'El documento describe un perfil integrador de salud, ciencias sociales y servicios para personas mayores. Busca comprender el envejecimiento, planificar apoyos y promover autonomía, participación y dignidad, respetando los límites de la formación previa.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Biología y psicología del envejecimiento, y demografía de la vejez.',
+          'Enfermedades prevalentes, prevención y modelos de cuidado.',
+          'Políticas públicas, servicios gerontológicos y gestión de proyectos sociales.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Analizar dimensiones biológicas, psicológicas y sociales del envejecimiento.',
+          'Participar en la planificación de cuidados y redes de apoyo sociofamiliar según el rol profesional.',
+          'Colaborar en programas de envejecimiento activo, investigación aplicada y gestión de servicios.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Empatía y respeto por la dignidad y autonomía de la persona mayor.',
+          'Compromiso con la inclusión y la participación social.',
+          'Mirada interdisciplinaria y sensibilidad frente a la dependencia y la soledad.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Programas de envejecimiento activo',
+        description:
+          'Colaborar en iniciativas de participación, autonomía y bienestar para personas mayores.',
+      },
+      {
+        title: 'Servicios y proyectos sociales',
+        description:
+          'Participar en la gestión de servicios, redes de apoyo y proyectos comunitarios e institucionales.',
+      },
+      {
+        title: 'Apoyo sociofamiliar',
+        description:
+          'Aportar a la coordinación entre personas mayores, familias, cuidadores y redes de atención.',
+      },
+      {
+        title: 'Investigación e innovación',
+        description:
+          'Desarrollar proyectos aplicados sobre envejecimiento, tecnologías de apoyo y diseño universal.',
+      },
+    ],
+    approach:
+      'El PDF propone una visión transdisciplinaria que incorpora relaciones intergeneracionales, tecnologías de apoyo y diseño universal. Enfatiza la autonomía frente a la dependencia y la pertinencia social de los servicios para personas mayores.',
+    scopeNote:
+      'Las funciones clínicas, la valoración sanitaria y la dirección de servicios regulados dependen de la titulación previa y la habilitación profesional. El diplomado no las sustituye.',
+    source: {
+      kind: 'pdf',
+      label: 'PDF institucional suministrado',
+      pages: [3, 4],
+      url: 'https://www.mediafire.com/file/o98wdwluqpibowc/cursos+de+la+universidad.pdf/file',
+    },
     audience:
       'Personas vinculadas al cuidado, la intervención social y el acompañamiento a personas mayores.',
     modules: [
@@ -846,7 +1762,7 @@ export const programs = [
         'Salud y atención geriátrica',
         [
           'Enfermedades prevalentes',
-          'Diabetes e infraestructura de atención',
+          'Diabetes, hipertensión y demencias',
           'Técnicas de prevención y cuidado',
         ],
         '200 horas',
@@ -857,6 +1773,7 @@ export const programs = [
         [
           'Modelos de atención integral',
           'Cuidado domiciliario e institucional',
+          'Tecnologías de soporte',
           'Gestión de proyectos sociales',
         ],
         '200 horas',
@@ -888,18 +1805,76 @@ export const programs = [
     duration: 'Aprox. 4 a 6 meses',
     workload: '160 horas',
     durationNote:
-      'Cuatro niveles de 40 horas según el sitio original. Confirma la programación vigente.',
+      'El PDF (pp. 8–10) propone 160 horas en cuatro niveles de 40 h y sugiere un calendario de 4 a 6 meses. Confirma la programación vigente.',
     description: [
       'La psiconeuroinmunología estudia las interacciones entre los procesos psicológicos y los sistemas nervioso, endocrino e inmune. El programa se aproxima al estrés, las emociones y su relación con distintos procesos de salud.',
       'Incluye perspectivas de fisiología, investigación y colaboración interdisciplinaria. No sustituye la atención médica ni permite atribuir las enfermedades únicamente al estado emocional de una persona.',
     ],
     objective:
       'Comprender los fundamentos de las interacciones psiconeuroinmunológicas y analizar de forma crítica su estudio y sus aplicaciones profesionales.',
-    profile: [
-      'Reconocer funciones e interacciones de los sistemas nervioso, endocrino e inmune.',
-      'Interpretar información académica sobre estrés y salud.',
-      'Comprender estrategias de bienestar desde un enfoque interdisciplinario y basado en evidencia.',
+    graduateProfile:
+      'El documento plantea un perfil interdisciplinario para comprender las relaciones entre procesos psicológicos, sistema nervioso, endocrino e inmune. Destaca la lectura crítica de evidencia, la investigación y el diseño de acciones de bienestar dentro del alcance profesional.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Fisiología del estrés y del eje hipotálamo-hipófisis-adrenal.',
+          'Interacciones entre sistemas nervioso, endocrino e inmune.',
+          'Psicología de la salud, investigación y determinantes sociales del bienestar.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Interpretar información académica sobre estrés, emociones y salud.',
+          'Colaborar en proyectos de investigación y acciones de bienestar dentro del alcance profesional.',
+          'Reconocer límites de la evidencia y necesidad de derivación a profesionales de salud.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Sensibilidad y respeto hacia personas con enfermedades crónicas.',
+          'Pensamiento crítico y actualización científica.',
+          'Responsabilidad ética: no atribuir enfermedades únicamente al estado emocional.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Investigación en salud',
+        description:
+          'Participar en estudios y proyectos sobre interacciones psiconeuroinmunológicas, según la formación y el rol.',
+      },
+      {
+        title: 'Bienestar organizacional',
+        description:
+          'Colaborar en programas educativos de manejo del estrés y hábitos saludables en organizaciones.',
+      },
+      {
+        title: 'Educación y divulgación',
+        description:
+          'Preparar contenidos responsables sobre estrés, autocuidado y búsqueda de atención profesional.',
+      },
+      {
+        title: 'Proyectos interdisciplinarios',
+        description:
+          'Aportar a iniciativas de salud pública, tecnología en salud y bienestar comunitario.',
+      },
+    ],
+    approach:
+      'El PDF organiza el contenido en cuatro niveles y propone investigación, innovación tecnológica y políticas de bienestar. La ficha mantiene un enfoque prudente: comprender la relación mente-cuerpo no significa que los estados emocionales expliquen por sí solos una enfermedad.',
+    scopeNote:
+      'No habilita para diagnosticar, prescribir, interpretar pruebas clínicas ni tratar enfermedades. Esas actividades corresponden a profesionales de salud habilitados.',
+    source: {
+      kind: 'pdf',
+      label: 'PDF institucional suministrado',
+      pages: [8, 9, 10],
+      url: 'https://www.mediafire.com/file/o98wdwluqpibowc/cursos+de+la+universidad.pdf/file',
+    },
     audience:
       'Profesionales y estudiantes de áreas de salud y bienestar; verificar requisitos específicos con admisiones.',
     modules: [
@@ -960,29 +1935,87 @@ export const programs = [
     duration: 'Aprox. 16 meses',
     workload: '640 horas',
     durationNote:
-      'Distribución publicada en el sitio original. Consulta fechas y condiciones de la cohorte.',
+      'Intensidad y duración de referencia del PDF (pp. 5–6): 640 horas, aprox. 16 meses. Confirma calendario y vigencia con admisiones.',
     description: [
       'El programa estudia la sexualidad humana en sus dimensiones biológica, psicológica, social y cultural. Promueve una perspectiva respetuosa, inclusiva y orientada al bienestar y a la educación afectivo-sexual.',
       'El contenido abarca fundamentos, educación, clínica e investigación. Los aprendizajes relacionados con diagnóstico e intervención solo pueden aplicarse dentro de la habilitación profesional correspondiente; un diplomado no la reemplaza.',
     ],
     objective:
       'Comprender las dimensiones de la sexualidad y desarrollar una mirada educativa y ética sobre la salud sexual, las relaciones y la diversidad.',
-    profile: [
-      'Reconocer fundamentos biológicos, psicológicos y sociales de la sexualidad.',
-      'Participar en iniciativas de educación afectivo-sexual y prevención.',
-      'Comprender enfoques de atención interdisciplinaria y los límites de la propia práctica.',
+    graduateProfile:
+      'El documento describe un perfil clínico-educador interdisciplinario en sexualidad humana. La ficha lo presenta con énfasis en educación, derechos, comunicación y trabajo en red; la intervención clínica queda sujeta a la titulación y habilitación previas.',
+    competencies: [
+      {
+        title: 'Saber conocer',
+        icon: 'book',
+        items: [
+          'Fisiología sexual, psicología de la pareja y dimensiones sociales de la sexualidad.',
+          'Salud pública, derechos sexuales y educación sexual integral.',
+          'Diversidad, prevención, investigación y ética de la atención.',
+        ],
+      },
+      {
+        title: 'Saber hacer',
+        icon: 'hands',
+        items: [
+          'Diseñar propuestas de educación afectivo-sexual y prevención contextualizadas.',
+          'Comunicar y escuchar con confidencialidad, respeto y claridad.',
+          'Colaborar con equipos de salud y educación y reconocer criterios de remisión profesional.',
+        ],
+      },
+      {
+        title: 'Saber ser',
+        icon: 'heart',
+        items: [
+          'Respeto por la diversidad, el consentimiento y la autonomía.',
+          'Sensibilidad cultural y rechazo a la coerción y la discriminación.',
+          'Actuación ética y científica dentro de los límites de la formación.',
+        ],
+      },
     ],
+    careerAreas: [
+      {
+        title: 'Educación sexual integral',
+        description:
+          'Participar en programas educativos para jóvenes, familias y comunidades desde un enfoque de derechos.',
+      },
+      {
+        title: 'Promoción de la salud sexual',
+        description:
+          'Colaborar en iniciativas de prevención, bienestar y acceso a información y servicios.',
+      },
+      {
+        title: 'Trabajo interdisciplinario',
+        description:
+          'Aportar a equipos de salud, psicología y educación en proyectos de orientación y acompañamiento.',
+      },
+      {
+        title: 'Investigación y formación',
+        description:
+          'Desarrollar materiales, estudios y actividades de formación en sexología con rigor y ética.',
+      },
+    ],
+    approach:
+      'El PDF propone un abordaje integral, inclusivo y basado en evidencia, con referencias a perspectiva de género, derechos sexuales y tecnologías emergentes. La web conserva esas líneas sin presentar la formación como habilitación clínica automática.',
+    scopeNote:
+      'El diagnóstico y la terapia sexual requieren formación previa, habilitación y condiciones profesionales específicas. Un diplomado no reemplaza esos requisitos.',
+    source: {
+      kind: 'pdf',
+      label: 'PDF institucional suministrado',
+      pages: [5, 6],
+      url: 'https://www.mediafire.com/file/o98wdwluqpibowc/cursos+de+la+universidad.pdf/file',
+    },
     audience:
       'Profesionales y estudiantes de salud, psicología, educación y áreas afines; consultar requisitos de admisión.',
     modules: [
       module(
-        'Fundamentos',
-        'Bases de la sexualidad',
+        'Nivel básico',
+        'Fundamentos de la sexualidad',
         ['Bases biológicas humanas', 'Bases sociales de la sexualidad', 'Introducción clínica'],
         '160 horas',
       ),
       module(
-        'Educación',
+        'Nivel intermedio',
         'Educación y prevención',
         [
           'Estrategias educativas integrales',
@@ -992,7 +2025,7 @@ export const programs = [
         '180 horas',
       ),
       module(
-        'Clínica',
+        'Nivel avanzado',
         'Clínica y terapéutica',
         [
           'Diagnóstico e intervención clínica: alcance profesional',
@@ -1002,7 +2035,7 @@ export const programs = [
         '180 horas',
       ),
       module(
-        'Experto',
+        'Nivel experto',
         'Investigación y liderazgo',
         ['Formación de formadores', 'Metodologías de investigación', 'Liderazgo institucional'],
         '120 horas',
@@ -1024,7 +2057,14 @@ export const programs = [
   ],
   ...p,
   modality: p.practical ? 'Consultar componente práctico' : 'Modalidad virtual',
-  video: p.original ? 'PT6zEhrBaI0' : null,
+  // Video institucional heredado. Puede anularse en una ficha concreta con `video: null`.
+  video: p.video ?? (p.original ? 'PT6zEhrBaI0' : null),
+  // Video introductorio propio: pega aquí un ID o enlace de YouTube.
+  // Ejemplo: introVideo: 'https://www.youtube.com/watch?v=XXXXXXXXXXX'
+  // Si está vacío, el área muestra «Video introductorio próximamente».
+  // El video institucional heredado queda como enlace secundario cuando existe.
+  introVideo: p.introVideo ?? null,
+  introVideoTitle: p.introVideoTitle ?? null,
 }));
 // FOTOGRAFÍAS ORIGINALES. Cada nombre corresponde a un JPG de imagenes/carousel/.
 // Los cuatro primeros números indican el año; no hace falta renombrar los archivos.
